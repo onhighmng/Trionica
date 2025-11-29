@@ -1,0 +1,1 @@
+(function($){$(document).ready(function(){var cartOuterHeight=$('.cart-contents').outerHeight();$('.dropdown-cart-wrapper').css('top',cartOuterHeight);});})(jQuery);

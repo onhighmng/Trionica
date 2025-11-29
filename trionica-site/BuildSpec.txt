@@ -1,0 +1,198 @@
+# Website Build Specification
+
+This document provides a concise overview of every page/post extracted from the original site, including:
+
+- Title & ID – unique identifier from the WordPress export.
+- Type – page or post.
+- Content – plain‑text copy (HTML tags have been stripped).
+- Images – list of image filenames that belong to the page/post.
+
+All image assets are available in the folder `Extracted_Images/` (copied from the original `wp-content/uploads` directory).
+
+---
+
+Sample Page (ID: 2)
+Type: page
+Content:
+This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
+
+Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin' caught in the rain.)
+
+...or something like this:
+
+The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.
+
+As a new WordPress user, you should go to your dashboard to delete this page and create new pages for your content. Have fun!
+Images: None
+
+---
+
+Blog (ID: 6)
+Type: page
+Content: (none)
+Images: None
+
+---
+
+Notícias (ID: 26)
+Type: page
+Content: (none)
+Images: None
+
+---
+
+BLOG (ID: 995)
+Type: page
+Content:
+Blog
+EMERGENCY CALL - 24/7 +1 910-626-8525
+Images: None
+
+---
+
+Home (ID: 1043)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- 1.jpg
+- cp-40.png
+- download.png
+- imageedit_7_6827227186.png
+- logo.png
+- logo_DIS-1024x252.png
+- Logo_Matest_def-01-e1508228789861-1024x232.jpg
+- logo_optika_italy_black.png
+- lucas_nuelle_en-us.svg
+- Conchem_Logo-1024x580.png
+- 1.jpg
+
+---
+
+Quem somos (ID: 1044)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- inade-360x304.png
+- images.png
+- header-logo-anep.png
+- HCB-360x97.jpg
+- download-360x110.jpg
+- download-1-e1556023630936.jpg
+- BCI-LAST-360x400.png
+- banco-last-360x400.png
+- 19399620_1375015429253245_2341049790206874199_n-360x400.png
+- 185951_196856143676469_5944359_n-360x400.jpg
+- Unizambeze-360x385.jpg
+- Sasol_logo-360x400.png
+- logov5-360x221.png
+- logoiamretina.png
+- 1-1-264x400.png
+
+---
+
+Ensino e Investigação (ID: 1045)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images: placeholder.png (x6)
+
+---
+
+Contacte nos (ID: 1046)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images: None
+
+---
+
+TESTIMONIALS (ID: 1047)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- logo-01-free-img.png
+- logo-02-free-img.png
+- logo-03-free-img.png
+- logo-04-free-img.png
+
+---
+
+FAQ (ID: 1048)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images: None
+
+---
+
+Melhoria da Qualidade da Água no País (ID: 1052)
+Type: post
+Content: (see original file for full Portuguese copy)
+Images:
+- 2-768x512.jpg
+- 3-1024x618.jpg
+
+---
+
+Saúde (ID: 2093)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images: placeholder.png (x2)
+
+---
+
+Águas (ID: 2104)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- AMF900_AMC3100.jpg
+- maxresdefault-300x300.jpg
+- USB-5106_500-300x300.jpg
+- instrumentaçao-aguas.jpg
+- 9-6-Medidor-de-Chuva-at-35mm-Medi-o-Precipita-o-Resistente-para-Jardim-Ao-Ar.jpg_640x640-300x300.jpg
+- Contadores-mecânicos-e-eletrónicos-300x300.jpg
+- JPG_00be99567e1f2f5b010935b9adfce4a4-300x300.jpg
+- dmi-cp811se-telemetria-remota-medico-de-fluxo-acesso-remoto-D_NQ_NP_930765-MLB26613551179_012018-F-300x300.jpg
+- dessalinizadoras.jpg
+- tratamento-de-efluente-de-industria-textil-300x300.jpg
+- ETARs-–-Estações-de-Tratamento-de-aguas-residuais.jpg
+- Caudalimetros-controlo-de-perdas.jpg
+- Qualidade-de-agua-300x300.png
+
+---
+
+Ambiente (ID: 2107)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- Oceanografia.jpg
+- ruido-e-vibraçao.jpg
+- Clima-300x300.jpg
+- Qualidade-do-ar.jpg
+- placeholder.png
+
+---
+
+Minas (ID: 2125)
+Type: page
+Content: (see original file for full Portuguese copy)
+Images:
+- Magnetómetro-ou-gradiómetros.jpg
+- Gravimetria-300x300.jpg
+- SSWithWiFiBrochureRevB.png
+- sismica-300x300.png
+- Overhauser.jpg
+- Resistividade-1.jpg
+- XRD.jpg
+- Microscopia.jpg
+- XRF.jpg
+- Minas-E-D-D-300x300.jpeg
+- Produção-de-laminas-de-rochas.jpg
+
+---
+
+How to use this spec:
+1. Create pages/posts in the target CMS using the titles and IDs.
+2. Paste the Content block into the page body.
+3. Upload the listed Images from `Extracted_Images/` and insert them where appropriate.
+4. Optionally store the original ID in a custom field for reference.
+5. Verify that all pages render correctly and images load.
+
+All original text for each page is available in `WebsiteCopy.txt` if you need the full untruncated copy.

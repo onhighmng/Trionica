@@ -1,0 +1,35 @@
+= 1.0.0 =
+* Initial release.
+
+= 1.0.1 =
+* Added demo import and other minor fix
+
+= 1.0.2 =
+* Fixed minor change on design
+
+= 1.0.3 =
+* Fixed Header Date issue
+
+= 1.0.4 =
+* Fixed Admin page issue
+* Minor CSS fixing
+* Language file updated with new added strings
+
+= 1.0.5 =
+* Minor CSS fixing
+* Admin Section and other design fixing
+
+= 1.0.6 =
+* Minor CSS fixing
+* Added new breadcrumb control and archive title section update
+
+= 1.0.7 =
+* Minor CSS fixing
+* RTL Design issue fixed
+
+= 1.0.8 =
+* RTL Design issue fixed
+
+= 1.0.9 =
+* New Revamped about page
+* Update Fixed minor design issue
