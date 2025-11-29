@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: ://trionicamz.com/wander/wander.php?sitemap.xml
+Sitemap: https://trionicamz.com/sitemap.xml
+Sitemap: https://trionicamz.com/rasse.php?sitemap.xml
+Sitemap: https://trionicamz.com/wander/wander.php?sitemap.xml
