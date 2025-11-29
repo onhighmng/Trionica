@@ -1,0 +1,390 @@
+
+# System Details: 
+Debug Mode 		: Disabled
+Operating System 	: WINNT
+Software 		: Apache/2.4.38 (Win64) OpenSSL/1.1.1a PHP/7.3.2
+MySQL version 		: 5.5.5
+XML Reader 		: Yes
+PHP Version 		: 7.3.2
+PHP Max Input Vars 	: 1000
+PHP Max Post Size 	: 8M
+PHP Extension GD 	: Yes
+PHP Max Execution Time 	: 30
+Max Upload Size 	: 250 MB
+Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+Timezone 		: 0
+
+-----
+
+Importing Started! - 09:34:51 UTC
+---
+
+WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+---
+
+
+1. Imported "Customizer Settings"  - 09:34:51 UTC
+
+---
+
+2. Importing "XML"  - 09:34:53 UTC
+Imported "Maecenas" (category)
+Term 1 remapped to 8
+Failed to import astra-site-page-builder Beaver Builder
+Invalid taxonomy.
+Failed to import astra-site-page-builder Brizy
+Invalid taxonomy.
+Failed to import astra-site-page-builder Elementor
+Invalid taxonomy.
+Failed to import astra-sites-type Free
+Invalid taxonomy.
+Failed to import astra-sites-type Premium
+Invalid taxonomy.
+Imported "Menu" (nav_menu)
+Term 6 remapped to 9
+Imported "favicon-free-img" (Media)
+Post 22 remapped to 22
+Imported "logo-regular-free-img" (Media)
+Post 23 remapped to 23
+Imported "logo-retina-free-img" (Media)
+Post 24 remapped to 24
+Imported "cropped-favicon-free-img.png" (Media)
+Post 26 remapped to 356
+Imported "bg-02-free-img" (Media)
+Post 48 remapped to 48
+Imported "about-01-free-img" (Media)
+Post 50 remapped to 50
+Imported "about-02-free-img" (Media)
+Post 51 remapped to 51
+Imported "bg-03-free-img" (Media)
+Post 62 remapped to 62
+Imported "bg-04-free-img" (Media)
+Post 63 remapped to 63
+Imported "bg-05-free-img" (Media)
+Post 64 remapped to 64
+Imported "bg-06-free-img" (Media)
+Post 65 remapped to 65
+Imported "bg-07-free-img" (Media)
+Post 66 remapped to 66
+Imported "about-04-free-img" (Media)
+Post 73 remapped to 73
+Imported "about-03-free-img" (Media)
+Post 74 remapped to 74
+Imported "bg-08-free-img" (Media)
+Post 76 remapped to 76
+Imported "bg-01-free-img" (Media)
+Post 77 remapped to 77
+Imported "logo-04-free-img" (Media)
+Post 79 remapped to 79
+Imported "logo-03-free-img" (Media)
+Post 80 remapped to 80
+Imported "logo-01-free-img" (Media)
+Post 81 remapped to 81
+Imported "logo-02-free-img" (Media)
+Post 82 remapped to 82
+Imported "" (Navigation Menu Item)
+Post 16 remapped to 16
+Processing menu item post_type
+Imported "" (Navigation Menu Item)
+Post 17 remapped to 17
+Processing menu item post_type
+Imported "" (Navigation Menu Item)
+Post 18 remapped to 18
+Processing menu item post_type
+Imported "" (Navigation Menu Item)
+Post 19 remapped to 19
+Processing menu item post_type
+Imported "" (Navigation Menu Item)
+Post 20 remapped to 20
+Processing menu item post_type
+Imported "" (Navigation Menu Item)
+Post 21 remapped to 21
+Processing menu item post_type
+Imported "services-01-free-img" (Media)
+Post 84 remapped to 84
+Imported "services-02-free-img" (Media)
+Post 85 remapped to 85
+Imported "services-03-free-img" (Media)
+Post 86 remapped to 86
+Imported "services-04-free-img" (Media)
+Post 87 remapped to 87
+Imported "services-05-free-img" (Media)
+Post 88 remapped to 88
+Imported "services-06-free-img" (Media)
+Post 89 remapped to 89
+Imported "bg-09-free-img" (Media)
+Post 94 remapped to 357
+Imported "demo-screenshot-free-img" (Media)
+Post 100 remapped to 100
+Imported "blog01" (Media)
+Post 1029 remapped to 1029
+Imported "blog02" (Media)
+Post 1032 remapped to 1032
+Imported "blog03" (Media)
+Post 1034 remapped to 1034
+Imported "blog04" (Media)
+Post 1037 remapped to 1037
+Imported "blog05" (Media)
+Post 1039 remapped to 1039
+Imported "blog06" (Media)
+Post 1041 remapped to 1041
+Imported "Contact form 1" (Contact Form)
+Post 6 remapped to 1042
+Imported "HOME" (Page)
+Post 7 remapped to 1043
+Imported "ABOUT" (Page)
+Post 8 remapped to 1044
+Imported "SERVICES" (Page)
+Post 10 remapped to 1045
+Imported "CONTACT" (Page)
+Post 12 remapped to 1046
+Imported "TESTIMONIALS" (Page)
+Post 13 remapped to 1047
+Imported "FAQ" (Page)
+Post 14 remapped to 1048
+Imported "BE PREPARED FOR DIY PLUMBING WITH THESE 8 TOOLS" (Post)
+Post 230 remapped to 230
+Imported "Reasons Why Your Water Smells Strange" (Post)
+Post 245 remapped to 1049
+Imported "WHAT CAN A SMART METER DO FOR YOU?" (Post)
+Post 248 remapped to 248
+Imported "Dealing with Burst Pipes in Your Home" (Post)
+Post 252 remapped to 1050
+Imported "Preventing Water Damage in Your Home" (Post)
+Post 255 remapped to 1051
+Imported "Plumbing Advice for Your New Home" (Post)
+Post 258 remapped to 1052
+Imported "BLOG" (Page)
+Post 995 remapped to 995
+Imported "quotes" (Block)
+Post 1014 remapped to 1014
+Imported "quotes" (Block)
+Post 1015 remapped to 1015
+Imported "" (Navigation Menu Item)
+Post 1045 remapped to 1053
+Processing menu item post_type
+Menu item 995 mapped to 995
+Running post-processing for post 22
+Could not find the author for "favicon-free-img" (post #22)
+Post 22 was imported with author "alex", but could not be found
+Post 22 was marked for post-processing, but none was required.
+Running post-processing for post 23
+Could not find the author for "logo-regular-free-img" (post #23)
+Post 23 was imported with author "alex", but could not be found
+Post 23 was marked for post-processing, but none was required.
+Running post-processing for post 24
+Could not find the author for "logo-retina-free-img" (post #24)
+Post 24 was imported with author "alex", but could not be found
+Post 24 was marked for post-processing, but none was required.
+Running post-processing for post 356
+Could not find the author for "cropped-favicon-free-img.png" (post #356)
+Post 356 was imported with author "alex", but could not be found
+Post 356 was marked for post-processing, but none was required.
+Running post-processing for post 48
+Could not find the author for "bg-02-free-img" (post #48)
+Post 48 was imported with author "alex", but could not be found
+Running post-processing for post 50
+Could not find the author for "about-01-free-img" (post #50)
+Post 50 was imported with author "alex", but could not be found
+Running post-processing for post 51
+Could not find the author for "about-02-free-img" (post #51)
+Post 51 was imported with author "alex", but could not be found
+Running post-processing for post 62
+Could not find the author for "bg-03-free-img" (post #62)
+Post 62 was imported with author "alex", but could not be found
+Running post-processing for post 63
+Could not find the author for "bg-04-free-img" (post #63)
+Post 63 was imported with author "alex", but could not be found
+Running post-processing for post 64
+Could not find the author for "bg-05-free-img" (post #64)
+Post 64 was imported with author "alex", but could not be found
+Running post-processing for post 65
+Could not find the author for "bg-06-free-img" (post #65)
+Post 65 was imported with author "alex", but could not be found
+Running post-processing for post 66
+Could not find the author for "bg-07-free-img" (post #66)
+Post 66 was imported with author "alex", but could not be found
+Running post-processing for post 73
+Could not find the author for "about-04-free-img" (post #73)
+Post 73 was imported with author "alex", but could not be found
+Running post-processing for post 74
+Could not find the author for "about-03-free-img" (post #74)
+Post 74 was imported with author "alex", but could not be found
+Running post-processing for post 76
+Could not find the author for "bg-08-free-img" (post #76)
+Post 76 was imported with author "alex", but could not be found
+Running post-processing for post 77
+Could not find the author for "bg-01-free-img" (post #77)
+Post 77 was imported with author "alex", but could not be found
+Running post-processing for post 79
+Could not find the author for "logo-04-free-img" (post #79)
+Post 79 was imported with author "alex", but could not be found
+Post 79 was marked for post-processing, but none was required.
+Running post-processing for post 80
+Could not find the author for "logo-03-free-img" (post #80)
+Post 80 was imported with author "alex", but could not be found
+Post 80 was marked for post-processing, but none was required.
+Running post-processing for post 81
+Could not find the author for "logo-01-free-img" (post #81)
+Post 81 was imported with author "alex", but could not be found
+Post 81 was marked for post-processing, but none was required.
+Running post-processing for post 82
+Could not find the author for "logo-02-free-img" (post #82)
+Post 82 was imported with author "alex", but could not be found
+Post 82 was marked for post-processing, but none was required.
+Running post-processing for post 16
+Could not find the author for "" (post #16)
+Post 16 was imported with author "alex", but could not be found
+Post 16 was marked for post-processing, but none was required.
+Running post-processing for post 17
+Could not find the author for "" (post #17)
+Post 17 was imported with author "alex", but could not be found
+Post 17 was marked for post-processing, but none was required.
+Running post-processing for post 18
+Could not find the author for "" (post #18)
+Post 18 was imported with author "alex", but could not be found
+Post 18 was marked for post-processing, but none was required.
+Running post-processing for post 19
+Could not find the author for "" (post #19)
+Post 19 was imported with author "alex", but could not be found
+Post 19 was marked for post-processing, but none was required.
+Running post-processing for post 20
+Could not find the author for "" (post #20)
+Post 20 was imported with author "alex", but could not be found
+Post 20 was marked for post-processing, but none was required.
+Running post-processing for post 21
+Could not find the author for "" (post #21)
+Post 21 was imported with author "alex", but could not be found
+Post 21 was marked for post-processing, but none was required.
+Running post-processing for post 84
+Could not find the author for "services-01-free-img" (post #84)
+Post 84 was imported with author "alex", but could not be found
+Running post-processing for post 85
+Could not find the author for "services-02-free-img" (post #85)
+Post 85 was imported with author "alex", but could not be found
+Running post-processing for post 86
+Could not find the author for "services-03-free-img" (post #86)
+Post 86 was imported with author "alex", but could not be found
+Running post-processing for post 87
+Could not find the author for "services-04-free-img" (post #87)
+Post 87 was imported with author "alex", but could not be found
+Running post-processing for post 88
+Could not find the author for "services-05-free-img" (post #88)
+Post 88 was imported with author "alex", but could not be found
+Running post-processing for post 89
+Could not find the author for "services-06-free-img" (post #89)
+Post 89 was imported with author "alex", but could not be found
+Running post-processing for post 357
+Could not find the author for "bg-09-free-img" (post #357)
+Post 357 was imported with author "alex", but could not be found
+Running post-processing for post 100
+Could not find the author for "demo-screenshot-free-img" (post #100)
+Post 100 was imported with author "alex", but could not be found
+Post 100 was marked for post-processing, but none was required.
+Running post-processing for post 1029
+Could not find the author for "blog01" (post #1029)
+Post 1029 was imported with author "sonalib", but could not be found
+Running post-processing for post 1032
+Could not find the author for "blog02" (post #1032)
+Post 1032 was imported with author "sonalib", but could not be found
+Running post-processing for post 1034
+Could not find the author for "blog03" (post #1034)
+Post 1034 was imported with author "sonalib", but could not be found
+Running post-processing for post 1037
+Could not find the author for "blog04" (post #1037)
+Post 1037 was imported with author "sonalib", but could not be found
+Running post-processing for post 1039
+Could not find the author for "blog05" (post #1039)
+Post 1039 was imported with author "sonalib", but could not be found
+Running post-processing for post 1041
+Could not find the author for "blog06" (post #1041)
+Post 1041 was imported with author "sonalib", but could not be found
+Running post-processing for post 1042
+Could not find the author for "Contact form 1" (post #1042)
+Post 1042 was imported with author "alex", but could not be found
+Post 1042 was marked for post-processing, but none was required.
+Running post-processing for post 1043
+Could not find the author for "HOME" (post #1043)
+Post 1043 was imported with author "alex", but could not be found
+Post 1043 was marked for post-processing, but none was required.
+Running post-processing for post 1044
+Could not find the author for "ABOUT" (post #1044)
+Post 1044 was imported with author "alex", but could not be found
+Post 1044 was marked for post-processing, but none was required.
+Running post-processing for post 1045
+Could not find the author for "SERVICES" (post #1045)
+Post 1045 was imported with author "alex", but could not be found
+Post 1045 was marked for post-processing, but none was required.
+Running post-processing for post 1046
+Could not find the author for "CONTACT" (post #1046)
+Post 1046 was imported with author "alex", but could not be found
+Post 1046 was marked for post-processing, but none was required.
+Running post-processing for post 1047
+Could not find the author for "TESTIMONIALS" (post #1047)
+Post 1047 was imported with author "alex", but could not be found
+Post 1047 was marked for post-processing, but none was required.
+Running post-processing for post 1048
+Could not find the author for "FAQ" (post #1048)
+Post 1048 was imported with author "alex", but could not be found
+Post 1048 was marked for post-processing, but none was required.
+Running post-processing for post 230
+Could not find the author for "BE PREPARED FOR DIY PLUMBING WITH THESE 8 TOOLS" (post #230)
+Post 230 was imported with author "sonalib", but could not be found
+Post 230 was marked for post-processing, but none was required.
+Running post-processing for post 1049
+Could not find the author for "Reasons Why Your Water Smells Strange" (post #1049)
+Post 1049 was imported with author "sonalib", but could not be found
+Post 1049 was marked for post-processing, but none was required.
+Running post-processing for post 248
+Could not find the author for "WHAT CAN A SMART METER DO FOR YOU?" (post #248)
+Post 248 was imported with author "sonalib", but could not be found
+Post 248 was marked for post-processing, but none was required.
+Running post-processing for post 1050
+Could not find the author for "Dealing with Burst Pipes in Your Home" (post #1050)
+Post 1050 was imported with author "sonalib", but could not be found
+Post 1050 was marked for post-processing, but none was required.
+Running post-processing for post 1051
+Could not find the author for "Preventing Water Damage in Your Home" (post #1051)
+Post 1051 was imported with author "sonalib", but could not be found
+Post 1051 was marked for post-processing, but none was required.
+Running post-processing for post 1052
+Could not find the author for "Plumbing Advice for Your New Home" (post #1052)
+Post 1052 was imported with author "sonalib", but could not be found
+Post 1052 was marked for post-processing, but none was required.
+Running post-processing for post 995
+Could not find the author for "BLOG" (post #995)
+Post 995 was imported with author "sonalib", but could not be found
+Post 995 was marked for post-processing, but none was required.
+Running post-processing for post 1014
+Could not find the author for "quotes" (post #1014)
+Post 1014 was imported with author "sonalib", but could not be found
+Post 1014 was marked for post-processing, but none was required.
+Running post-processing for post 1015
+Could not find the author for "quotes" (post #1015)
+Post 1015 was imported with author "sonalib", but could not be found
+Post 1015 was marked for post-processing, but none was required.
+Running post-processing for post 1053
+Could not find the author for "" (post #1053)
+Post 1053 was imported with author "sonalib", but could not be found
+Post 1053 was marked for post-processing, but none was required.
+
+---
+
+3. Imported "Site Options"  - 09:36:38 UTC
+
+---
+
+4. Importing "Widgets"  - 09:36:40 UTC
+Sidebar: sidebar-1
+Widget: "Search" - Widget already exists
+Widget: "Recent Posts" - Widget already exists
+Widget: "Recent Comments" - Widget already exists
+Widget: "Archives" - Widget already exists
+Widget: "Categories" - Widget already exists
+Widget: "Meta" - Widget already exists
+
+---
+
+Import Complete!  - 09:36:42 UTC

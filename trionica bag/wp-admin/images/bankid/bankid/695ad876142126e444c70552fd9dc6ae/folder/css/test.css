@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;500;600&display=swap');font-family: 'Playfair Display', serif;
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+    background:#FAFAFA;
+}
+
+header , section , .footer{
+  max-width: 1441px;
+  margin:32px auto 40px auto;
+  padding: 0 20px;
+}
+header .nav ul li {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  margin-right: 80px;
+}
+
+
+
+.login{
+  max-width: 574px;
+}
+.login h2{
+  margin-top: 40px;
+  margin-bottom:40px;
+  color:#263c53;
+  font-weight: bold;
+}
+.login p{
+  margin-bottom: 65px;
+  font-size: 22px;
+  color:#333;
+  font-weight:400;
+}
+.user{
+  position: relative;
+}
+.user input {
+  padding-left: 15px;
+  height: 50px;
+  border-radius: 0;
+  border-color:#333;
+  margin-bottom:80px;
+  border:none;
+  border-bottom:1px solid #333;
+  outline: none;
+  background:#F6F6F6;
+}
+.user label{
+  position:absolute;
+  top: 12px;
+  left: 17px;
+  pointer-events:none;
+  color:#333;
+  transition: .5s;
+  font-size: 18px;
+  padding-top: 0;
+}
+.user input:focus ~ label,
+.user input:valid ~ label{
+  top: -27px;
+  left: 0px;
+  font-size: 18px;
+}
+
+.user input:focus{
+  box-shadow: none;
+  border: 1px solid #333;
+}
+.eye , .eyes{
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor:pointer;
+}
+.eye{
+  display: none;
+}
+.login a{
+  font-weight:500;
+  text-decoration:none;
+}
+.login .bttn{
+  display: flex;
+  justify-content: space-between;
+  margin-top:30px;
+
+}
+.login .bttn #reg , .login .bttn #log{
+  color: #4187de;
+  border: 2px solid;
+  padding: 11px 30px 15px;
+  font-weight:500;
+  font-size: 16px;
+  width:190px;
+}
+.login .bttn #log{
+  background: #efefef;
+  border:#efefef;
+  color:#ccc;
+}
+.img{
+   position: absolute;
+   top: 11px;
+   right: 12px;
+}
+
+footer{
+  background:#EFEFEF;
+  padding-top:5px;
+}
+footer p{
+  font-size: 22px;
+  color: #333;
+}
+footer span{
+  color:#0000008a;
+  font-size: 8px;
+}
+
+@media(max-width:995px){
+  .logo img{
+    width:104px;
+  }
+  .login h2{
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .login p{
+    font-size: 16px;
+    margin-bottom:50px;
+  }
+  .user #password{
+    margin-bottom: 30px;
+  }
+  .login .bttn{
+    display: block;
+  }
+  .login .bttn #reg, .login .bttn #log{
+    width: 100%;
+  }
+  .login .bttn #reg{
+    margin-bottom:20px;
+  }
+  footer p , footer span{
+    font-size: 15px;
+  }
+}

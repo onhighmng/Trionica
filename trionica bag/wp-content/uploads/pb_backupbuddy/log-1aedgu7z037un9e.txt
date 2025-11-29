@@ -1,0 +1,19 @@
+[Apr 23, 2019 23:01:06 0-error] <span class="pb_label pb_label">Important</span> <b>Set an ImportBuddy password on the <a href="https://trionica.cloudaccess.host/wp-admin/admin.php?page=pb_backupbuddy_settings">Settings</a> page before attempting to Migrate to a new server.</b> Error Code: 
+[Apr 23, 2019 23:01:09 0-error] <span class="pb_label pb_label">Important</span> <b>Set an ImportBuddy password on the <a href="https://trionica.cloudaccess.host/wp-admin/admin.php?page=pb_backupbuddy_settings">Settings</a> page before attempting to Migrate to a new server.</b> Error Code: 
+[Apr 23, 2019 23:02:12 0-error] [fzwuqzs3sr] Error #843948: Unable to write to SQL file. Return error/bytes written: `0`.
+[Apr 23, 2019 23:02:12 0-error] [fzwuqzs3sr] Database dump procedure failed.
+[Apr 23, 2019 23:02:12 0-error] [fzwuqzs3sr] Failed function `backup_create_database_dump`. Backup terminated.
+[Apr 23, 2019 23:02:14 0-error] [h9nvtdzjwv] Error #43894384: Unable to write to fileoptions as file `/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/pb_backupbuddy/fileoptions/h9nvtdzjwv.txt` is currently locked by another fileoptions instance/process. Last seen lock ID: ``. My lock ID: `5cbf9976202e50.31968687`.
+[Apr 23, 2019 23:02:14 0-error] [h9nvtdzjwv] Error #843948: Unable to write to SQL file. Return error/bytes written: `0`.
+[Apr 23, 2019 23:02:14 0-error] [h9nvtdzjwv] Database dump procedure failed.
+[Apr 23, 2019 23:02:14 0-error] [h9nvtdzjwv] Failed function `backup_create_database_dump`. Backup terminated.
+[Apr 23, 2019 23:04:13 0-error] [0w7zdqu3zu] Error #43894384: Unable to write to fileoptions as file `/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/pb_backupbuddy/fileoptions/0w7zdqu3zu.txt` is currently locked by another fileoptions instance/process. Last seen lock ID: ``. My lock ID: `5cbf99eda03549.15943363`.
+[Apr 23, 2019 23:04:13 0-error] [0w7zdqu3zu] Error #9002b. Unable to create temporary storage directory (/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/backupbuddy_temp/0w7zdqu3zu/)
+[Apr 23, 2019 23:04:13 0-error] Fatal Error #4344443: Backup failure. Please see any errors listed in the Status Log for details. Error Code: 
+[Apr 23, 2019 23:04:22 0-error] [t35hzegusf] Error #43894384: Unable to write to fileoptions as file `/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/pb_backupbuddy/fileoptions/t35hzegusf.txt` is currently locked by another fileoptions instance/process. Last seen lock ID: ``. My lock ID: `5cbf99f6e72d75.97571522`.
+[Apr 23, 2019 23:04:22 0-error] [t35hzegusf] Error #9002b. Unable to create temporary storage directory (/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/backupbuddy_temp/t35hzegusf/)
+[Apr 23, 2019 23:04:22 0-error] Fatal Error #4344443: Backup failure. Please see any errors listed in the Status Log for details. Error Code: 
+[Apr 23, 2019 23:04:34 0-error] [znduawy9b7] Error #43894384: Unable to write to fileoptions as file `/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/pb_backupbuddy/fileoptions/znduawy9b7.txt` is currently locked by another fileoptions instance/process. Last seen lock ID: ``. My lock ID: `5cbf9a02243377.72902658`.
+[Apr 23, 2019 23:04:34 0-error] [znduawy9b7] Error #9002b. Unable to create temporary storage directory (/mnt/data/vhosts/casite-1064391.cloudaccess.net/httpdocs/wp-content/uploads/backupbuddy_temp/znduawy9b7/)
+[Apr 23, 2019 23:04:34 0-error] Fatal Error #4344443: Backup failure. Please see any errors listed in the Status Log for details. Error Code: 
+[Apr 23, 2019 23:04:39 0-error] [] Error #328937233: Unable to unserialize key data ``.

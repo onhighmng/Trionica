@@ -1,0 +1,10 @@
+CREATE TABLE `mkt_nextend2_section_storage` (  `id` int(11) NOT NULL AUTO_INCREMENT,  `application` varchar(20) NOT NULL,  `section` varchar(128) NOT NULL,  `referencekey` varchar(128) NOT NULL,  `value` mediumtext NOT NULL,  `system` int(11) NOT NULL DEFAULT '0',  `editable` int(11) NOT NULL DEFAULT '1',  PRIMARY KEY (`id`),  KEY `application` (`application`,`section`,`referencekey`),  KEY `application_2` (`application`,`section`)) ENGINE=InnoDB AUTO_INCREMENT=10003 DEFAULT CHARSET=utf8;
+/*!40000 ALTER TABLE `mkt_nextend2_section_storage` DISABLE KEYS */;
+SET FOREIGN_KEY_CHECKS = 0;
+SET UNIQUE_CHECKS = 0;
+INSERT INTO `mkt_nextend2_section_storage` VALUES('10000', 'system', 'global', 'n2_ss3_version', '3.3.15r3213', '1', '1');
+INSERT INTO `mkt_nextend2_section_storage` VALUES('10001', 'smartslider', 'free', 'subscribeOnImport', '1', '0', '1');
+INSERT INTO `mkt_nextend2_section_storage` VALUES('10002', 'smartslider', 'sliderChanged', '2', '1', '0', '1');
+/*!40000 ALTER TABLE `mkt_nextend2_section_storage` ENABLE KEYS */;
+SET FOREIGN_KEY_CHECKS = 1;
+SET UNIQUE_CHECKS = 1;
