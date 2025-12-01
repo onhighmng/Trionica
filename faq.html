@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Trionica</title>
+    <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
+
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        /* FAQ Hero Section */
+        .faq-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 110px 0 70px 0;
+            margin: 0;
+        }
+
+        .faq-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
+        }
+
+        .faq-hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 2000px;
+        }
+
+        .faq-title {
+            color: #ffffff;
+            font-size: 52px;
+            font-weight: 700;
+            text-align: left;
+            margin: 0;
+        }
+
+        .faq-separator {
+            width: 27px;
+            height: 2px;
+            background: #8ed1fc;
+            margin: 18px 0;
+        }
+
+        .emergency-box {
+            background-color: #ea3a1c;
+            padding: 30px;
+            text-align: right;
+        }
+
+        .emergency-title {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 13px;
+        }
+
+        .emergency-separator {
+            width: 20px;
+            height: 2px;
+            background: #ffffff;
+            margin: 0 0 22px auto;
+        }
+
+        .emergency-number {
+            color: #ffffff;
+            font-size: 34px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            padding: 110px 0 70px 0;
+            background: #fff;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .faq-question {
+            background: #f9f9f9;
+            padding: 20px 25px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            color: #2354a2;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 25px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2354a2;
+        }
+
+        .faq-question.active::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-answer.active {
+            padding: 20px 25px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #f2f5f7;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            color: #2354a2;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ea3a1c;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #d63316;
+            color: #ffffff;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="page sydney-container">
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="container">
+            <div class="site-branding">
+                <a href="index.html" rel="home">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
+                </a>
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="ensino.html">Ensino</a></li>
+                    <li><a href="saude.html">Saúde</a></li>
+                    <li><a href="aguas.html">Águas</a></li>
+                    <li><a href="ambiente.html">Ambiente</a></li>
+                    <li><a href="minas.html">Minas</a></li>
+                    <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li class="current-menu-item"><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1 class="faq-title">FAQ</h1>
+                    <div class="faq-separator"></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="emergency-box">
+                        <p class="emergency-title">EMERGENCY CALL - 24/7</p>
+                        <div class="emergency-separator"></div>
+                        <p class="emergency-number">+258 846 974 444</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Which area of the city lorem quis bibendum auctor, nisi elit?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Mauris in erat justo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            How can I get in touch with lorem ipsum dolor sit amet ullamcorper?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Mauris in erat justo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Where can I aptent taciti sociosqu ad litora torquent?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Mauris in erat justo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Do you also offer ut imperdiet nisi proin condimentum fermentum?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Mauris in erat justo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            Does plumbing mean velit mauris egestas quam, ut aliquam?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos. Mauris in erat justo.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">quick & reliable plumbing services</h2>
+            <p class="cta-text">
+                Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis. Sed non mauris vitae erat consequat auctor eu in elit. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat
+                justo.
+            </p>
+            <a href="contacte-nos.html" class="cta-button">CONTACT US</a>
+        </div>
+    </section>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="site-info">
+                <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
+                <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('active'));
+
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
