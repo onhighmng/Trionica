@@ -8,6 +8,116 @@
     <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
+
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        .page-wrap {
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h5 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        .product-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .product-card img {
+            margin: 0 auto 15px;
+            max-height: 180px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body class="page sydney-container">
@@ -16,12 +126,11 @@
         <div class="container">
             <div class="site-branding">
                 <a href="index.html" rel="home">
-                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica"
-                        style="max-width: 250px; height: auto;">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
                 </a>
             </div>
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <ul class="nav-menu">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="ensino.html">Ensino</a></li>
@@ -39,10 +148,10 @@
         <div class="container">
             <main id="main" class="site-main" role="main">
 
-                <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 30px; text-align: center;">Minas</h1>
+                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Minas</h1>
 
                 <section style="padding: 40px 0;">
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                    <p style="font-size: 16px;">
                         De modo a contribuir para o desenvolvimento deste sector e tendo em conta a proteção ambiental
                         para a defesa do património natural, dispomos de equipamentos para serviços de laboratório de
                         alta tecnologia mineira e ambiental, tornando-nos assim, pioneiros em fornecimento de diversos
@@ -53,72 +162,75 @@
                 </section>
 
                 <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center;">Equipamentos
-                        Disponíveis</h2>
+                    <h2 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Equipamentos Disponíveis</h2>
 
                     <div class="row">
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">
-                                    Magnetómetro/gradiómetros</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Magnetómetro-ou-gradiómetros.jpg"
+                                    alt="Magnetómetro">
+                                <h5 style="font-size: 16px;">Magnetómetro</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Gravimetria</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Gravimetria-300x300.jpg" alt="Gravimetria">
+                                <h5 style="font-size: 16px;">Gravimetria</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Resistividade</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Resistividade-1.jpg" alt="Resistividade">
+                                <h5 style="font-size: 16px;">Resistividade</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Sísmica</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/sismica-300x300.png" alt="Sísmica">
+                                <h5 style="font-size: 16px;">Sísmica</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Microscopia</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Microscopia.jpg" alt="Microscopia">
+                                <h5 style="font-size: 16px;">Microscopia</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">XRF</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/XRF.jpg" alt="XRF">
+                                <h5 style="font-size: 16px;">XRF</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">XRD</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/XRD.jpg" alt="XRD">
+                                <h5 style="font-size: 16px;">XRD</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Equipamento de
-                                    Geofísica</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/SSWithWiFiBrochureRevB.jpg" alt="Geofísica">
+                                <h5 style="font-size: 16px;">Equipamento de Geofísica</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Diagrafia para águas
-                                    subterrâneas</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Minas-E-D-D-300x300.jpeg" alt="Diagrafia">
+                                <h5 style="font-size: 16px;">Diagrafia para águas subterrâneas</h5>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Produção de laminas
-                                    de rochas</h5>
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Produção-de-laminas-de-rochas.jpg"
+                                    alt="Produção de laminas">
+                                <h5 style="font-size: 16px;">Produção de laminas de rochas</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Overhauser.jpg" alt="Magnetómetro/gradiómetros">
+                                <h5 style="font-size: 16px;">Magnetómetro/gradiómetros</h5>
                             </div>
                         </div>
                     </div>
@@ -128,10 +240,9 @@
         </div>
     </div>
 
-    <footer id="colophon" class="site-footer" role="contentinfo"
-        style="background-color: #252525; color: #767676; padding: 40px 0; margin-top: 60px;">
+    <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="site-info" style="text-align: center;">
+            <div class="site-info">
                 <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
                 <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
                 </p>

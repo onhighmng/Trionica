@@ -8,6 +8,116 @@
     <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
+
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        .page-wrap {
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        .product-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .product-card img {
+            margin: 0 auto 15px;
+            max-height: 200px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body class="page sydney-container">
@@ -16,12 +126,11 @@
         <div class="container">
             <div class="site-branding">
                 <a href="index.html" rel="home">
-                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica"
-                        style="max-width: 250px; height: auto;">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
                 </a>
             </div>
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <ul class="nav-menu">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="ensino.html">Ensino</a></li>
@@ -39,15 +148,15 @@
         <div class="container">
             <main id="main" class="site-main" role="main">
 
-                <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 30px; text-align: center;">Águas</h1>
+                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Águas</h1>
 
                 <section style="padding: 40px 0;">
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                    <p style="font-size: 16px;">
                         Nesta área o nosso foco é proporcionar aos nossos clientes facilidade na aquisição de
                         equipamentos para melhoramento da qualidade de água e a respectiva medição. Para tal
                         apresentamos soluções tecnológicas inovadoras e acessíveis.
                     </p>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                    <p style="font-size: 16px;">
                         O nosso diferencial nesta área destaca-se na disponibilização de diversos equipamentos para a
                         monotorização, analise e medição de qualidade de água: Caudalimetros para controlo de perdas,
                         Contadores pré-pagos e kits de corte, Contadores mecânicos, Data Loggers, Telemetria,
@@ -57,81 +166,94 @@
                 </section>
 
                 <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center;">Nossos
-                        Produtos</h2>
+                    <h2 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Nossos Produtos</h2>
 
                     <div class="row">
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Caudalimetros
-                                    controlo de perdas</h5>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/04/Caudalimetros-controlo-de-perdas.jpg"
+                                    alt="Caudalimetros">
+                                <h5 style="font-size: 16px; font-weight: 700;">Caudalimetros controlo de perdas</h5>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Contadores pré-pagos
-                                    e kits de corte</h5>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/AMF900_AMC3100.jpg" alt="Contadores pré-pagos">
+                                <h5 style="font-size: 16px; font-weight: 700;">Contadores pré-pagos e kits de corte</h5>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Contadores mecânicos
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Contadores-mecânicos-e-eletrónicos-300x300.jpg"
+                                    alt="Contadores mecânicos">
+                                <h5 style="font-size: 16px; font-weight: 700;">Contadores mecânicos</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/USB-5106_500-300x300.jpg" alt="Data loggers">
+                                <h5 style="font-size: 16px; font-weight: 700;">Data loggers</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/dmi-cp811se-telemetria-remota-medico-de-fluxo-acesso-remoto-D_NQ_NP_930765-MLB26613551179_012018-F-300x300.jpg"
+                                    alt="Telemetria">
+                                <h5 style="font-size: 16px; font-weight: 700;">Telemetria</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/04/instrumentaçao-aguas.jpg" alt="Instrumentação">
+                                <h5 style="font-size: 16px; font-weight: 700;">Instrumentação</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/maxresdefault-300x300.jpg" alt="Monitorização">
+                                <h5 style="font-size: 16px; font-weight: 700;">Monitorização de recursos hídricos</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/Qualidade-de-agua-300x300.png"
+                                    alt="Qualidade da Água">
+                                <h5 style="font-size: 16px; font-weight: 700;">Qualidade da Água</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/dessalinizadoras.jpg" alt="Dessalinizadoras">
+                                <h5 style="font-size: 16px; font-weight: 700;">Dessalinizadoras</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/tratamento-de-efluente-de-industria-textil-300x300.jpg"
+                                    alt="Tratamento de água">
+                                <h5 style="font-size: 16px; font-weight: 700;">Sistemas de tratamento de água</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/ETARs-–-Estações-de-Tratamento-de-aguas-residuais.jpg"
+                                    alt="ETARs">
+                                <h5 style="font-size: 16px; font-weight: 700;">ETARs – Estações de Tratamento</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/9-6-Medidor-de-Chuva-at-35mm-Medi-o-Precipita-o-Resistente-para-Jardim-Ao-Ar.jpg_640x640-300x300.jpg"
+                                    alt="Medidor de nível">
+                                <h5 style="font-size: 16px; font-weight: 700;">Medidor de nível e precipitação</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="product-card">
+                                <img src="wp-content/uploads/2019/03/JPG_00be99567e1f2f5b010935b9adfce4a4-300x300.jpg"
+                                    alt="Controlo de perdas">
+                                <h5 style="font-size: 16px; font-weight: 700;">Medição e controlo de perdas em redes
                                 </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Data loggers</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Telemetria</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Instrumentação</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Monitorização de
-                                    recursos hídricos</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Qualidade da Água
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Dessalinizadoras
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">Sistemas de
-                                    tratamento de água</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card"
-                                style="text-align: center; padding: 15px; border: 1px solid #eee; border-radius: 5px;">
-                                <h5 style="font-size: 16px; font-weight: 700; margin-bottom: 10px;">ETARs</h5>
                             </div>
                         </div>
                     </div>
@@ -141,10 +263,9 @@
         </div>
     </div>
 
-    <footer id="colophon" class="site-footer" role="contentinfo"
-        style="background-color: #252525; color: #767676; padding: 40px 0; margin-top: 60px;">
+    <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="site-info" style="text-align: center;">
+            <div class="site-info">
                 <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
                 <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
                 </p>
