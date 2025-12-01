@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Static site for Trionica",
     "scripts": {
-        "build": "echo 'Static site - no build needed'"
+        "build": "node build.js"
     },
     "keywords": [],
     "author": "",
