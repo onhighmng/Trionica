@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Trionica</title>
+    <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
+
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        /* Blog Hero */
+        .blog-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 110px 0 70px 0;
+        }
+
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
+        }
+
+        .blog-hero .container {
+            position: relative;
+            z-index: 1;
+            max-width: 2000px;
+        }
+
+        .blog-title {
+            color: #ffffff;
+            font-size: 52px;
+            font-weight: 700;
+            text-align: left;
+            margin: 0;
+        }
+
+        .blog-separator {
+            width: 27px;
+            height: 2px;
+            background: #8ed1fc;
+            margin: 18px 0;
+        }
+
+        /* Post Grid Section 1 - Background Image */
+        .post-grid-1 {
+            padding: 110px 0 70px 0;
+            background: #fff;
+        }
+
+        .post-card-bg {
+            position: relative;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 32px;
+        }
+
+        .post-card-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.87;
+            transition: opacity 0.3s;
+        }
+
+        .post-card-bg:hover::before {
+            opacity: 0.75;
+        }
+
+        .post-card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px;
+            z-index: 1;
+        }
+
+        .post-card-title {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-card-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .post-card-title a:hover {
+            color: #8ed1fc;
+        }
+
+        .post-card-meta {
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .post-card-excerpt {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .post-card-button {
+            display: inline-block;
+            background-color: #ea3a1c;
+            color: #ffffff;
+            padding: 6px 21px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .post-card-button:hover {
+            background-color: #d63316;
+            color: #ffffff;
+        }
+
+        /* Post Grid Section 2 - White Cards */
+        .post-grid-2 {
+            padding: 110px 0 70px 0;
+            background: #f2f5f7;
+        }
+
+        .post-card-white {
+            background: #ffffff;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            transition: box-shadow 0.3s;
+        }
+
+        .post-card-white:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .post-card-white-content {
+            padding: 29px;
+        }
+
+        .post-card-white-title {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .post-card-white-title a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .post-card-white-title a:hover {
+            color: #2354a2;
+        }
+
+        .post-card-white-meta {
+            color: #000000;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .post-card-white-excerpt {
+            color: #000000;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            .post-card-content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body class="blog sydney-container">
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="container">
+            <div class="site-branding">
+                <a href="index.html" rel="home">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
+                </a>
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="ensino.html">Ensino</a></li>
+                    <li><a href="saude.html">Saúde</a></li>
+                    <li><a href="aguas.html">Águas</a></li>
+                    <li><a href="ambiente.html">Ambiente</a></li>
+                    <li><a href="minas.html">Minas</a></li>
+                    <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li class="current-menu-item"><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1 class="blog-title">Blog</h1>
+                    <div class="blog-separator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Grid 1 - Background Image Style -->
+    <section class="post-grid-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="post-card-bg" style="background-image: url('wp-content/uploads/2019/04/1.jpg');">
+                        <div class="post-card-content">
+                            <h2 class="post-card-title">
+                                <a href="blog-post-1052.html">Melhoria da Qualidade da Água no País</a>
+                            </h2>
+                            <div class="post-card-meta">
+                                <span>admin</span> | <span>April 2, 2019</span>
+                            </div>
+                            <p class="post-card-excerpt">
+                                Decorreu nos dias 02 a 13 do passado mês de Abril, na sala Pemba do Hotel Tivoli, na
+                                Cidade de Maputo, a formação sobre uso dos Kits de Análise de…
+                            </p>
+                            <a href="blog-post-1052.html" class="post-card-button">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="post-card-bg" style="background-image: url('wp-content/uploads/2019/04/1.jpg');">
+                        <div class="post-card-content">
+                            <h2 class="post-card-title">
+                                <a href="#">Equipamentos Laboratoriais de Qualidade</a>
+                            </h2>
+                            <div class="post-card-meta">
+                                <span>admin</span> | <span>March 15, 2019</span>
+                            </div>
+                            <p class="post-card-excerpt">
+                                Fornecemos equipamentos de laboratório de alta qualidade para diversas áreas, incluindo
+                                ensino, saúde, águas e ambiente...
+                            </p>
+                            <a href="#" class="post-card-button">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Grid 2 - White Card Style -->
+    <section class="post-grid-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="post-card-white">
+                        <img src="wp-content/uploads/2019/04/1.jpg" alt="Post" class="post-card-image">
+                        <div class="post-card-white-content">
+                            <h3 class="post-card-white-title">
+                                <a href="blog-post-1052.html">Melhoria da Qualidade da Água no País</a>
+                            </h3>
+                            <div class="post-card-white-meta">
+                                <span>April 2, 2019</span>
+                            </div>
+                            <p class="post-card-white-excerpt">
+                                Decorreu nos dias 02 a 13 do passado mês de Abril...
+                            </p>
+                            <a href="blog-post-1052.html" class="post-card-button">READ MORE</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="post-card-white">
+                        <img src="wp-content/uploads/2019/04/1.jpg" alt="Post" class="post-card-image">
+                        <div class="post-card-white-content">
+                            <h3 class="post-card-white-title">
+                                <a href="#">Soluções Inovadoras para Laboratórios</a>
+                            </h3>
+                            <div class="post-card-white-meta">
+                                <span>March 20, 2019</span>
+                            </div>
+                            <p class="post-card-white-excerpt">
+                                Apresentamos as mais recentes tecnologias...
+                            </p>
+                            <a href="#" class="post-card-button">READ MORE</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="post-card-white">
+                        <img src="wp-content/uploads/2019/04/1.jpg" alt="Post" class="post-card-image">
+                        <div class="post-card-white-content">
+                            <h3 class="post-card-white-title">
+                                <a href="#">Equipamentos para Ensino Superior</a>
+                            </h3>
+                            <div class="post-card-white-meta">
+                                <span>February 28, 2019</span>
+                            </div>
+                            <p class="post-card-white-excerpt">
+                                Fornecemos equipamentos didáticos de ponta...
+                            </p>
+                            <a href="#" class="post-card-button">READ MORE</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="site-info">
+                <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
+                <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
