@@ -8,6 +8,125 @@
     <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
+
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        .page-wrap {
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        blockquote {
+            border-left: 4px solid #d65050;
+            padding-left: 30px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        .clients-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients-grid figure {
+            margin: 0;
+        }
+
+        .clients-grid img {
+            max-width: 150px;
+        }
+    </style>
 </head>
 
 <body class="page sydney-container">
@@ -16,12 +135,11 @@
         <div class="container">
             <div class="site-branding">
                 <a href="index.html" rel="home">
-                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica"
-                        style="max-width: 250px; height: auto;">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
                 </a>
             </div>
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <ul class="nav-menu">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="current-menu-item"><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="ensino.html">Ensino</a></li>
@@ -39,24 +157,23 @@
         <div class="container">
             <main id="main" class="site-main" role="main">
 
-                <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 30px; text-align: center;">Quem Somos</h1>
+                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Quem Somos</h1>
 
                 <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 20px;">QUEM SOMOS</h2>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                    <h2 style="font-size: 32px; margin-bottom: 20px;">QUEM SOMOS</h2>
+                    <p style="font-size: 16px;">
                         Somos uma empresa moçambicana, localizada na cidade de Maputo, focada no desenvolvimento de
                         soluções e realizações de projectos, tendo como ponto primordial proporcionar aos nossos
                         clientes produtos e serviços de alta qualidade com métodos e tecnologias mais recentes de acordo
                         com as suas necessidades.
                     </p>
-                    <blockquote
-                        style="border-left: 4px solid #d65050; padding-left: 30px; margin: 30px 0; font-style: italic; font-size: 18px;">
+                    <blockquote style="font-size: 18px;">
                         <p>Fundada em 2010, a nossa empresa é dirigida por profissionais altamente qualificados e com
                             vasta experiência no fornecimento de diversos Equipamentos de Laboratório para às áreas de:
                             Ensino e Investigação, Saúde, Águas, Ambiente e Minas, onde transmitimos segurança e
                             confiabilidade através dos equipamentos que fornecemos.</p>
                     </blockquote>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                    <p style="font-size: 16px;">
                         Em nosso portfólio, após 9 anos de experiência, contabiliza-se como grande factor de destaque, a
                         qualidade na execução dos nossos trabalhos, a formação e a fiel manutenção dos equipamentos o
                         que nos qualifica como uma empresa respeitada e sempre indicada por nossos clientes.
@@ -64,14 +181,13 @@
                 </section>
 
                 <section style="padding: 40px 0;">
-                    <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Assistência Técnica
-                        Especializada</h4>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                    <h4 style="font-size: 24px; margin-bottom: 20px;">Assistência Técnica Especializada</h4>
+                    <p style="font-size: 16px;">
                         Nossa equipe é formada por técnicos especializados e treinados em Moçambique, bem como no
                         estrangeiro, destacados pela sua competência e flexibilidade no atendimento contínuo aos nossos
                         clientes em todas as regiões do país, desde o primeiro contacto até aos serviços pós-venda.
                     </p>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+                    <p style="font-size: 16px;">
                         Para além do fornecimento do Equipamento, prestamos serviços de Instalação e Treinamento para o
                         bom uso dos equipamentos, oferecemos garantia e executamos serviços de manutenção dentro de todo
                         o território nacional. Possuímos diversos equipamentos de diagnóstico de avarias, reparação e
@@ -80,7 +196,7 @@
                 </section>
 
                 <section style="padding: 40px 0;">
-                    <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 20px;">Nossa Missão</h3>
+                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossa Missão</h3>
                     <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
                         <li>Projectar e implementar soluções inovadoras e serviços que satisfaçam as necessidades e
                             requisitos dos nossos clientes;</li>
@@ -89,7 +205,7 @@
                             soluções mais inovadoras e eficientes com procedimentos mais eficazes.</li>
                     </ul>
 
-                    <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 20px;">Nossa Visão</h3>
+                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossa Visão</h3>
                     <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
                         <li>Assumir cada vez mais um papel de empresa de referência em Moçambique no Fornecimento de
                             Equipamentos Laboratoriais no mercado.</li>
@@ -101,8 +217,8 @@
                             trabalhadores e acionistas.</li>
                     </ul>
 
-                    <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 20px;">Nossos Valores</h3>
-                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossos Valores</h3>
+                    <p style="font-size: 16px; margin-bottom: 15px;">
                         O que faz da Triónica Moçambique Lda., uma Empresa de referência no mercado é a credibilidade e
                         confiança que detém entre os seus Clientes. Para tal, rege a sua actividade pelos seguintes
                         valores:
@@ -121,32 +237,23 @@
                 </section>
 
                 <section style="padding: 40px 0;">
-                    <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center;">Nossos
-                        Clientes:</h1>
-                    <div class="clients-grid"
-                        style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center;">
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/inade-360x304.png" alt="inade"
-                                style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/images.png" alt="images"
-                                style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/header-logo-anep.png"
-                                alt="header-logo-anep" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/HCB-360x97.jpg" alt="HCB"
-                                style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/download-360x110.jpg"
-                                alt="download" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/BCI-LAST-360x400.png"
-                                alt="BCI LAST" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/banco-last-360x400.png"
-                                alt="banco last" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/Unizambeze-360x385.jpg"
-                                alt="Unizambeze" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/Sasol_logo-360x400.png"
-                                alt="Sasol_logo" style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/logov5-360x221.png" alt="logov5"
-                                style="max-width: 150px; height: auto;" /></figure>
-                        <figure style="margin: 0;"><img src="wp-content/uploads/2019/04/logoiamretina.png"
-                                alt="logoiamretina" style="max-width: 150px; height: auto;" /></figure>
+                    <h1 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Nossos Clientes:</h1>
+                    <div class="clients-grid">
+                        <figure><img src="wp-content/uploads/2019/04/inade-360x304.png" alt="inade" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/images.png" alt="images" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/header-logo-anep.png" alt="header-logo-anep" />
+                        </figure>
+                        <figure><img src="wp-content/uploads/2019/04/HCB-360x97.jpg" alt="HCB" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/download-360x110.jpg" alt="download" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/BCI-LAST-360x400.png" alt="BCI LAST" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/banco-last-360x400.png" alt="banco last" />
+                        </figure>
+                        <figure><img src="wp-content/uploads/2019/04/Unizambeze-360x385.jpg" alt="Unizambeze" />
+                        </figure>
+                        <figure><img src="wp-content/uploads/2019/04/Sasol_logo-360x400.png" alt="Sasol_logo" />
+                        </figure>
+                        <figure><img src="wp-content/uploads/2019/04/logov5-360x221.png" alt="logov5" /></figure>
+                        <figure><img src="wp-content/uploads/2019/04/logoiamretina.png" alt="logoiamretina" /></figure>
                     </div>
                 </section>
 
@@ -154,10 +261,9 @@
         </div>
     </div>
 
-    <footer id="colophon" class="site-footer" role="contentinfo"
-        style="background-color: #252525; color: #767676; padding: 40px 0; margin-top: 60px;">
+    <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="site-info" style="text-align: center;">
+            <div class="site-info">
                 <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
                 <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
                 </p>
