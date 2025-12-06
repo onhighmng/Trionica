@@ -1,89 +1,271 @@
-<div class="site-branding">
-    <a href="index.html" rel="home">
-        <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica"
-            style="max-width: 250px; height: auto;">
-    </a>
-</div>
-<nav id="site-navigation" class="main-navigation" role="navigation">
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quem-somos.html">Quem Somos</a></li>
-        <li><a href="ensino.html">Ensino</a></li>
-        <li class="current-menu-item"><a href="saude.html">Saúde</a></li>
-        <li><a href="aguas.html">Águas</a></li>
-        <li><a href="ambiente.html">Ambiente</a></li>
-        <li><a href="minas.html">Minas</a></li>
-        <li><a href="contacte-nos.html">Contacte nos</a></li>
-    </ul>
-</nav>
-</div>
-</header>
+<!DOCTYPE html>
+<html lang="pt-PT">
 
-<div id="content" class="page-wrap">
-    <div class="container">
-        <main id="main" class="site-main" role="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde - Trionica</title>
+    <link rel="stylesheet" href="wp-content/themes/sydney/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="wp-content/themes/sydney/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-            <h1 style="font-size: 42px; font-weight: 700; margin-bottom: 30px; text-align: center;">Saúde</h1>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+            line-height: 1.8;
+        }
 
-            <section style="padding: 40px 0;">
-                <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-                    Com o objectivo de desenvolver o sistema da saúde no País, fornecemos equipamentos de qualidade
-                    e de alta tecnologia para a prevenção, o diagnóstico e combate aos problemas de saúde.
-                </p>
-                <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                    Temos a disposição equipamentos que garantem segurança, mobilidade e integridade física, o que
-                    faz com que os nossos clientes fiquem satisfeitos com os nossos serviços e equipamentos,
-                    nomeadamente: Equipamentos e Mobiliário Hospitalar, Aparelhos de Rx, CT‐Tomografia
-                    Computorizada, MRI‐Ressonância Magnética, Equipamentos para Centros de Diagnósticos,
-                    Tele‐radiologia, Soluções de detenção da tuberculose, OneStopTB Clínicas e Sistemas de Decisão
-                    Clínica Automático.
-                </p>
-            </section>
+        .site-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            z-index: 100;
+        }
 
-            <section style="padding: 40px 0;">
-                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center;">Categorias
-                    de Equipamentos</h2>
+        .site-branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-                <div class="row">
-                    <div class="col-md-6" style="margin-bottom: 30px;">
-                        <div class="category-item"
-                            style="text-align: center; padding: 30px; border: 1px solid #eee; border-radius: 5px;">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Equipamentos
-                                Específicos</h4>
-                            <p style="font-size: 14px; color: #999; margin-bottom: 20px;">(8 produtos)</p>
-                            <p style="font-size: 15px; line-height: 1.6;">
-                                Equipamentos especializados para diagnóstico e tratamento médico avançado.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="margin-bottom: 30px;">
-                        <div class="category-item"
-                            style="text-align: center; padding: 30px; border: 1px solid #eee; border-radius: 5px;">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;">Equipamentos Gerais
-                            </h4>
-                            <p style="font-size: 14px; color: #999; margin-bottom: 20px;">(3 produtos)</p>
-                            <p style="font-size: 15px; line-height: 1.6;">
-                                Equipamentos hospitalares e mobiliário para uso geral em unidades de saúde.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        .site-branding img {
+            max-width: 250px;
+            height: auto;
+            display: inline-block;
+        }
 
-        </main>
-    </div>
-</div>
+        .main-navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-<footer id="colophon" class="site-footer" role="contentinfo"
-    style="background-color: #252525; color: #767676; padding: 40px 0; margin-top: 60px;">
-    <div class="container">
-        <div class="site-info" style="text-align: center;">
-            <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
-            <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
-            </p>
+        .main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-navigation li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .main-navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+
+        .main-navigation a:hover,
+        .main-navigation .current-menu-item a {
+            color: #d65050;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 80px 0;
+            margin-bottom: 60px;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
+        }
+
+        .page-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-title {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-separator {
+            width: 50px;
+            height: 3px;
+            background: #ea3a1c;
+            margin: 20px 0 0 0;
+        }
+
+        /* Content */
+        .intro-text {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+
+        /* Categories Grid */
+        .category-item {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            height: 100%;
+            border-bottom: 3px solid transparent;
+            text-align: center;
+        }
+
+        .category-item:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-bottom-color: #2354a2;
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 40px;
+            color: #ea3a1c;
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            color: #2354a2;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .product-count {
+            background: #ea3a1c;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            position: relative;
+            top: -2px;
+            margin-left: 10px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #777;
+            margin: 0;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="page sydney-container">
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="container">
+            <div class="site-branding">
+                <a href="index.html" rel="home">
+                    <img src="wp-content/uploads/2019/05/cropped-LogoTRIONICAmz-002_1-1.png" alt="Trionica">
+                </a>
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="ensino.html">Ensino</a></li>
+                    <li class="current-menu-item"><a href="saude.html">Saúde</a></li>
+                    <li><a href="aguas.html">Águas</a></li>
+                    <li><a href="ambiente.html">Ambiente</a></li>
+                    <li><a href="minas.html">Minas</a></li>
+                    <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Saúde</h1>
+            <div class="page-separator"></div>
         </div>
     </div>
-</footer>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="intro-text">
+                    Com o objectivo de desenvolver o sistema da saúde no País, fornecemos equipamentos de qualidade e de
+                    alta tecnologia para a prevenção, o diagnóstico e combate aos problemas de saúde. Temos a disposição
+                    equipamentos que garantem segurança, mobilidade e integridade física, nomeadamente: Equipamentos e
+                    Mobiliário Hospitalar, Aparelhos de Rx, CT‐Tomografia Computorizada, MRI‐Ressonância Magnética,
+                    Equipamentos para Centros de Diagnósticos, Tele‐radiologia, Soluções de detenção da tuberculose,
+                    OneStopTB Clínicas e Sistemas de Decisão Clínica Automático.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-6">
+                <div class="category-item">
+                    <img src="wp-content/uploads/placeholder.png" alt="Equipamentos Específicos">
+                    <h4 class="category-title">
+                        Equipamentos Específicos
+                        <span class="product-count">8</span>
+                    </h4>
+                    <p class="category-desc">Equipamentos especializados para diagnóstico e tratamento avançado.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="category-item">
+                    <img src="wp-content/uploads/placeholder.png" alt="Equipamentos Gerais">
+                    <h4 class="category-title">
+                        Equipamentos Gerais
+                        <span class="product-count">3</span>
+                    </h4>
+                    <p class="category-desc">Mobiliário e equipamentos essenciais para unidades de saúde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="site-info">
+                <p style="margin-bottom: 10px;">&copy; 2025 Trionica Moçambique. Todos os direitos reservados.</p>
+                <p style="margin-bottom: 0;">Bairro da Costa de Sol, Av. 4.680, Maputo - Moçambique | +258 846 974 444
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

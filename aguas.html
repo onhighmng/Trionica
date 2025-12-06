@@ -19,6 +19,7 @@
             padding: 0;
             background: #fff;
             color: #333;
+            line-height: 1.8;
         }
 
         .site-header {
@@ -70,19 +71,85 @@
             color: #d65050;
         }
 
-        .page-wrap {
-            padding: 40px 0;
+        /* Hero Section */
+        .page-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 80px 0;
+            margin-bottom: 60px;
         }
 
-        .container {
-            max-width: 1170px;
-            margin: 0 auto;
-            padding: 0 15px;
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .page-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-title {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-separator {
+            width: 50px;
+            height: 3px;
+            background: #ea3a1c;
+            margin: 20px 0 0 0;
+        }
+
+        /* Content */
+        .intro-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+
+        /* Products Grid */
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-bottom-color: #2354a2;
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            margin: 0 auto 20px;
+            max-height: 180px;
+            object-fit: contain;
+        }
+
+        .product-title {
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
         }
 
         .site-footer {
@@ -93,29 +160,9 @@
             text-align: center;
         }
 
-        h1,
-        h2,
-        h3 {
-            color: #333;
-            font-weight: 700;
-        }
-
-        p {
-            line-height: 1.8;
-        }
-
-        .product-card {
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #eee;
-            border-radius: 5px;
-            height: 100%;
-        }
-
-        .product-card img {
-            margin: 0 auto 15px;
-            max-height: 200px;
-            object-fit: contain;
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -139,127 +186,126 @@
                     <li><a href="ambiente.html">Ambiente</a></li>
                     <li><a href="minas.html">Minas</a></li>
                     <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="content" class="page-wrap">
+    <div class="page-hero">
         <div class="container">
-            <main id="main" class="site-main" role="main">
+            <h1 class="page-title">Águas</h1>
+            <div class="page-separator"></div>
+        </div>
+    </div>
 
-                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Águas</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="intro-text">
+                    Nesta área o nosso foco é proporcionar aos nossos clientes facilidade na aquisição de equipamentos
+                    para melhoramento da qualidade de água e a respectiva medição. Para tal apresentamos soluções
+                    tecnológicas inovadoras e acessíveis.
+                </p>
+                <p class="intro-text">
+                    O nosso diferencial nesta área destaca-se na disponibilização de diversos equipamentos para a
+                    monitorização, analise e medição de qualidade de água: Caudalimetros para controlo de perdas,
+                    Contadores pré-pagos e kits de corte, Contadores mecânicos, Data Loggers, Telemetria,
+                    Instrumentação, Monitorização de Recursos Hídricos, Equipamento para controlo da qualidade da água,
+                    Sistemas de tratamento de águas desinfeção, Dessalinizadoras e ETARs.
+                </p>
+                <h2 class="section-title"
+                    style="color: #2354a2; font-size: 28px; font-weight: 700; margin-bottom: 40px; text-align: center;">
+                    Nossos Produtos</h2>
+            </div>
+        </div>
 
-                <section style="padding: 40px 0;">
-                    <p style="font-size: 16px;">
-                        Nesta área o nosso foco é proporcionar aos nossos clientes facilidade na aquisição de
-                        equipamentos para melhoramento da qualidade de água e a respectiva medição. Para tal
-                        apresentamos soluções tecnológicas inovadoras e acessíveis.
-                    </p>
-                    <p style="font-size: 16px;">
-                        O nosso diferencial nesta área destaca-se na disponibilização de diversos equipamentos para a
-                        monotorização, analise e medição de qualidade de água: Caudalimetros para controlo de perdas,
-                        Contadores pré-pagos e kits de corte, Contadores mecânicos, Data Loggers, Telemetria,
-                        Instrumentação, Monitorização de Recursos Hídricos, Equipamento para controlo da qualidade da
-                        água, Sistemas de tratamento de águas desinfeção, Dessalinizadoras e ETARs.
-                    </p>
-                </section>
-
-                <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Nossos Produtos</h2>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/04/Caudalimetros-controlo-de-perdas.jpg"
-                                    alt="Caudalimetros">
-                                <h5 style="font-size: 16px; font-weight: 700;">Caudalimetros controlo de perdas</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/AMF900_AMC3100.jpg" alt="Contadores pré-pagos">
-                                <h5 style="font-size: 16px; font-weight: 700;">Contadores pré-pagos e kits de corte</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/Contadores-mecânicos-e-eletrónicos-300x300.jpg"
-                                    alt="Contadores mecânicos">
-                                <h5 style="font-size: 16px; font-weight: 700;">Contadores mecânicos</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/USB-5106_500-300x300.jpg" alt="Data loggers">
-                                <h5 style="font-size: 16px; font-weight: 700;">Data loggers</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/dmi-cp811se-telemetria-remota-medico-de-fluxo-acesso-remoto-D_NQ_NP_930765-MLB26613551179_012018-F-300x300.jpg"
-                                    alt="Telemetria">
-                                <h5 style="font-size: 16px; font-weight: 700;">Telemetria</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/04/instrumentaçao-aguas.jpg" alt="Instrumentação">
-                                <h5 style="font-size: 16px; font-weight: 700;">Instrumentação</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/maxresdefault-300x300.jpg" alt="Monitorização">
-                                <h5 style="font-size: 16px; font-weight: 700;">Monitorização de recursos hídricos</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/Qualidade-de-agua-300x300.png"
-                                    alt="Qualidade da Água">
-                                <h5 style="font-size: 16px; font-weight: 700;">Qualidade da Água</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/dessalinizadoras.jpg" alt="Dessalinizadoras">
-                                <h5 style="font-size: 16px; font-weight: 700;">Dessalinizadoras</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/tratamento-de-efluente-de-industria-textil-300x300.jpg"
-                                    alt="Tratamento de água">
-                                <h5 style="font-size: 16px; font-weight: 700;">Sistemas de tratamento de água</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/ETARs-–-Estações-de-Tratamento-de-aguas-residuais.jpg"
-                                    alt="ETARs">
-                                <h5 style="font-size: 16px; font-weight: 700;">ETARs – Estações de Tratamento</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/9-6-Medidor-de-Chuva-at-35mm-Medi-o-Precipita-o-Resistente-para-Jardim-Ao-Ar.jpg_640x640-300x300.jpg"
-                                    alt="Medidor de nível">
-                                <h5 style="font-size: 16px; font-weight: 700;">Medidor de nível e precipitação</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="product-card">
-                                <img src="wp-content/uploads/2019/03/JPG_00be99567e1f2f5b010935b9adfce4a4-300x300.jpg"
-                                    alt="Controlo de perdas">
-                                <h5 style="font-size: 16px; font-weight: 700;">Medição e controlo de perdas em redes
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
+        <div class="row display-flex">
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/04/Caudalimetros-controlo-de-perdas.jpg" alt="Caudalimetros">
+                    <h5 class="product-title">Caudalimetros controlo de perdas</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/AMF900_AMC3100.jpg" alt="Contadores pré-pagos">
+                    <h5 class="product-title">Contadores pré-pagos e kits de corte</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/Contadores-mecânicos-e-eletrónicos-300x300.jpg"
+                        alt="Contadores mecânicos">
+                    <h5 class="product-title">Contadores mecânicos</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/USB-5106_500-300x300.jpg" alt="Data loggers">
+                    <h5 class="product-title">Data loggers</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/dmi-cp811se-telemetria-remota-medico-de-fluxo-acesso-remoto-D_NQ_NP_930765-MLB26613551179_012018-F-300x300.jpg"
+                        alt="Telemetria">
+                    <h5 class="product-title">Telemetria</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/04/instrumentaçao-aguas.jpg" alt="Instrumentação">
+                    <h5 class="product-title">Instrumentação</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/maxresdefault-300x300.jpg" alt="Monitorização">
+                    <h5 class="product-title">Monitorização de recursos hídricos</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/Qualidade-de-agua-300x300.png" alt="Qualidade da Água">
+                    <h5 class="product-title">Qualidade da Água</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/dessalinizadoras.jpg" alt="Dessalinizadoras">
+                    <h5 class="product-title">Dessalinizadoras</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/tratamento-de-efluente-de-industria-textil-300x300.jpg"
+                        alt="Tratamento de água">
+                    <h5 class="product-title">Sistemas de tratamento de água</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/ETARs-–-Estações-de-Tratamento-de-aguas-residuais.jpg"
+                        alt="ETARs">
+                    <h5 class="product-title">ETARs – Estações de Tratamento</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/9-6-Medidor-de-Chuva-at-35mm-Medi-o-Precipita-o-Resistente-para-Jardim-Ao-Ar.jpg_640x640-300x300.jpg"
+                        alt="Medidor de nível">
+                    <h5 class="product-title">Medidor de nível e precipitação</h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="product-card">
+                    <img src="wp-content/uploads/2019/03/JPG_00be99567e1f2f5b010935b9adfce4a4-300x300.jpg"
+                        alt="Controlo de perdas">
+                    <h5 class="product-title">Medição e controlo de perdas em redes</h5>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -19,6 +19,7 @@
             padding: 0;
             background: #fff;
             color: #333;
+            line-height: 1.8;
         }
 
         .site-header {
@@ -70,19 +71,91 @@
             color: #d65050;
         }
 
-        .page-wrap {
-            padding: 40px 0;
+        /* Hero Section */
+        .page-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 80px 0;
+            margin-bottom: 60px;
         }
 
-        .container {
-            max-width: 1170px;
-            margin: 0 auto;
-            padding: 0 15px;
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .page-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-title {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-separator {
+            width: 50px;
+            height: 3px;
+            background: #ea3a1c;
+            margin: 20px 0 0 0;
+        }
+
+        /* Content */
+        .intro-text {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+
+        /* Grid */
+        .category-item {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .category-item:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-bottom-color: #2354a2;
+            transform: translateY(-5px);
+        }
+
+        .category-item img {
+            margin: 0 auto 20px;
+            max-height: 180px;
+            object-fit: contain;
+        }
+
+        .category-title {
+            color: #2354a2;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .category-desc {
+            font-size: 15px;
+            color: #777;
+            margin: 0;
         }
 
         .site-footer {
@@ -93,30 +166,9 @@
             text-align: center;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            color: #333;
-            font-weight: 700;
-        }
-
-        p {
-            line-height: 1.8;
-        }
-
-        .category-item {
-            text-align: center;
-            padding: 30px;
-            border: 1px solid #eee;
-            border-radius: 5px;
-            height: 100%;
-        }
-
-        .category-item img {
-            margin: 0 auto 20px;
-            max-height: 180px;
-            object-fit: contain;
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -140,80 +192,73 @@
                     <li class="current-menu-item"><a href="ambiente.html">Ambiente</a></li>
                     <li><a href="minas.html">Minas</a></li>
                     <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="content" class="page-wrap">
+    <div class="page-hero">
         <div class="container">
-            <main id="main" class="site-main" role="main">
+            <h1 class="page-title">Ambiente</h1>
+            <div class="page-separator"></div>
+        </div>
+    </div>
 
-                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Ambiente</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="intro-text">
+                    O nosso grande propósito é disponibilizar nesta área soluções sustentáveis para o melhoramento do
+                    meio ambiente, fornecendo diversos equipamentos laboratoriais e de campo para Clima (Estacoes
+                    Meteorológicas), Qualidade do Ar (Deteção do Ar), Ruido e Vibração (Vibrómetros e Sonómetros),
+                    Recursos Naturais (Data Loggers) e Oceanografia (Sondas Oceanográficas) às diversas Universidades,
+                    Instituições de ensino e outras entidades ligadas ao meio ambiente, atendendo as normas ambientais
+                    nacionais e internacionais.
+                </p>
+                <h2 class="section-title"
+                    style="color: #2354a2; font-size: 28px; font-weight: 700; margin-bottom: 40px; text-align: center;">
+                    Áreas de Atuação</h2>
+            </div>
+        </div>
 
-                <section style="padding: 40px 0;">
-                    <p style="font-size: 16px;">
-                        O nosso grande propósito é disponibilizar nesta área soluções sustentáveis para o melhoramento
-                        do meio ambiente, fornecendo diversos equipamentos laboratoriais e de campo para Clima (Estacoes
-                        Meteorológicas), Qualidade do Ar (Deteção do Ar), Ruido e Vibração (Vibrómetros e Sonómetros),
-                        Recursos Naturais (Data Loggers) e Oceanografia (Sondas Oceanográficas) às diversas
-                        Universidades, Instituições de ensino e outras entidades ligadas ao meio ambiente, atendendo as
-                        normas ambientais nacionais e internacionais.
-                    </p>
-                </section>
-
-                <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Áreas de Atuação</h2>
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="category-item">
-                                <img src="wp-content/uploads/2019/03/Oceanografia.jpg" alt="Oceanografia">
-                                <h4 style="font-size: 20px; margin-bottom: 15px;">Oceanografia</h4>
-                                <p style="font-size: 15px;">
-                                    Sondas Oceanográficas para estudos marinhos
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="category-item">
-                                <img src="wp-content/uploads/2019/03/ruido-e-vibraçao.jpg" alt="Ruido e vibração">
-                                <h4 style="font-size: 20px; margin-bottom: 15px;">Ruido e Vibração</h4>
-                                <p style="font-size: 15px;">
-                                    Vibrómetros e Sonómetros para medição de ruído e vibração
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="category-item">
-                                <img src="wp-content/uploads/2019/03/Clima-300x300.jpg" alt="Clima">
-                                <h4 style="font-size: 20px; margin-bottom: 15px;">Clima</h4>
-                                <p style="font-size: 15px;">
-                                    Estações Meteorológicas para monitorização climática
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="category-item">
-                                <img src="wp-content/uploads/2019/03/Qualidade-do-ar.jpg" alt="Qualidade do ar">
-                                <h4 style="font-size: 20px; margin-bottom: 15px;">Qualidade do Ar</h4>
-                                <p style="font-size: 15px;">
-                                    Equipamentos para deteção e análise da qualidade do ar
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                            <div class="category-item">
-                                <h4 style="font-size: 20px; margin-bottom: 15px;">Recursos Naturais</h4>
-                                <p style="font-size: 15px;">
-                                    Data Loggers para monitorização de recursos naturais
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
+        <div class="row display-flex">
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="category-item">
+                    <img src="wp-content/uploads/2019/03/Oceanografia.jpg" alt="Oceanografia">
+                    <h4 class="category-title">Oceanografia</h4>
+                    <p class="category-desc">Sondas Oceanográficas para estudos marinhos</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="category-item">
+                    <img src="wp-content/uploads/2019/03/ruido-e-vibraçao.jpg" alt="Ruido e vibração">
+                    <h4 class="category-title">Ruido e Vibração</h4>
+                    <p class="category-desc">Vibrómetros e Sonómetros para medição de ruído e vibração</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="category-item">
+                    <img src="wp-content/uploads/2019/03/Clima-300x300.jpg" alt="Clima">
+                    <h4 class="category-title">Clima</h4>
+                    <p class="category-desc">Estações Meteorológicas para monitorização climática</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="category-item">
+                    <img src="wp-content/uploads/2019/03/Qualidade-do-ar.jpg" alt="Qualidade do ar">
+                    <h4 class="category-title">Qualidade do Ar</h4>
+                    <p class="category-desc">Equipamentos para deteção e análise da qualidade do ar</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="category-item">
+                    <img src="wp-content/uploads/placeholder.png" alt="Recursos Naturais">
+                    <h4 class="category-title">Recursos Naturais</h4>
+                    <p class="category-desc">Data Loggers para monitorização de recursos naturais</p>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -19,8 +19,10 @@
             padding: 0;
             background: #fff;
             color: #333;
+            line-height: 1.8;
         }
 
+        /* Header */
         .site-header {
             background: #fff;
             padding: 20px 0;
@@ -70,61 +72,158 @@
             color: #d65050;
         }
 
-        .page-wrap {
-            padding: 40px 0;
+        /* Hero Section */
+        .page-hero {
+            position: relative;
+            background-image: url('wp-content/uploads/2019/04/Webp.net-compress-image.jpg');
+            background-position: center;
+            background-size: cover;
+            padding: 80px 0;
+            margin-bottom: 60px;
         }
 
-        .container {
-            max-width: 1170px;
-            margin: 0 auto;
-            padding: 0 15px;
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2354a2;
+            opacity: 0.65;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .page-hero .container {
+            position: relative;
+            z-index: 1;
         }
 
-        .site-footer {
-            background-color: #252525;
-            color: #767676;
-            padding: 40px 0;
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
+        .page-title {
+            color: #ffffff;
+            font-size: 42px;
             font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-separator {
+            width: 50px;
+            height: 3px;
+            background: #ea3a1c;
+            margin: 20px 0 0 0;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding-bottom: 60px;
+        }
+
+        .section-title {
+            color: #2354a2;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #ea3a1c;
+            margin-top: 10px;
         }
 
         p {
-            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 16px;
         }
 
-        blockquote {
-            border-left: 4px solid #d65050;
-            padding-left: 30px;
-            margin: 30px 0;
-            font-style: italic;
+        /* Clients Grid */
+        .clients-section {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+            margin-top: 40px;
         }
 
         .clients-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 40px;
             justify-content: center;
             align-items: center;
         }
 
         .clients-grid figure {
             margin: 0;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+            opacity: 0.8;
+        }
+
+        .clients-grid figure:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
 
         .clients-grid img {
-            max-width: 150px;
+            max-width: 160px;
+            height: auto;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: #f4f8fb;
+            border-left: 5px solid #2354a2;
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+            color: #444;
+            font-size: 18px;
+        }
+
+        /* Mission Vision Values */
+        .mvv-box {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .mvv-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mvv-icon {
+            font-size: 40px;
+            color: #ea3a1c;
+            margin-bottom: 20px;
+        }
+
+        .mvv-title {
+            color: #2354a2;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .site-footer {
+            background-color: #252525;
+            color: #767676;
+            padding: 40px 0;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -148,116 +247,137 @@
                     <li><a href="ambiente.html">Ambiente</a></li>
                     <li><a href="minas.html">Minas</a></li>
                     <li><a href="contacte-nos.html">Contacte nos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="content" class="page-wrap">
+    <div class="page-hero">
         <div class="container">
-            <main id="main" class="site-main" role="main">
+            <h1 class="page-title">Quem Somos</h1>
+            <div class="page-separator"></div>
+        </div>
+    </div>
 
-                <h1 style="font-size: 42px; margin-bottom: 30px; text-align: center;">Quem Somos</h1>
+    <div class="container content-section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title">Nossa História</h2>
+                <p>
+                    A <strong>TRIÓNICA MOÇAMBIQUE, LDA.</strong>, é uma empresa de direito moçambicano, registada na
+                    Conservatória de Registo das Entidades Legais sob o NUEL: 100236086 e, publicada no Boletim da
+                    Republica nº 113, III serie de 21 de Setembro de 2011.
+                </p>
+                <p>
+                    Somos uma empresa moçambicana, localizada na cidade de Maputo, focada no desenvolvimento de soluções
+                    e realizações de projectos, tendo como ponto primordial proporcionar aos nossos clientes produtos e
+                    serviços de alta qualidade com métodos e tecnologias mais recentes de acordo com as suas
+                    necessidades, contribuindo assim para o desenvolvimento sustentável do País nas áreas de:
+                </p>
+                <ul>
+                    <li><strong>Ciência e Educação;</strong></li>
+                    <li><strong>Saúde;</strong></li>
+                    <li><strong>Ambiente;</strong></li>
+                    <li><strong>Engenharia e Minas;</strong></li>
+                    <li><strong>Agricultura;</strong></li>
+                    <li><strong>Electricidade e Electrónica;</strong></li>
+                </ul>
 
-                <section style="padding: 40px 0;">
-                    <h2 style="font-size: 32px; margin-bottom: 20px;">QUEM SOMOS</h2>
-                    <p style="font-size: 16px;">
-                        Somos uma empresa moçambicana, localizada na cidade de Maputo, focada no desenvolvimento de
-                        soluções e realizações de projectos, tendo como ponto primordial proporcionar aos nossos
-                        clientes produtos e serviços de alta qualidade com métodos e tecnologias mais recentes de acordo
-                        com as suas necessidades.
-                    </p>
-                    <blockquote style="font-size: 18px;">
-                        <p>Fundada em 2010, a nossa empresa é dirigida por profissionais altamente qualificados e com
-                            vasta experiência no fornecimento de diversos Equipamentos de Laboratório para às áreas de:
-                            Ensino e Investigação, Saúde, Águas, Ambiente e Minas, onde transmitimos segurança e
-                            confiabilidade através dos equipamentos que fornecemos.</p>
-                    </blockquote>
-                    <p style="font-size: 16px;">
-                        Em nosso portfólio, após 9 anos de experiência, contabiliza-se como grande factor de destaque, a
-                        qualidade na execução dos nossos trabalhos, a formação e a fiel manutenção dos equipamentos o
-                        que nos qualifica como uma empresa respeitada e sempre indicada por nossos clientes.
-                    </p>
-                </section>
+                <h2 class="section-title" style="margin-top: 40px;">Assistência Técnica Especializada</h2>
+                <p>
+                    Nossa equipe é formada por técnicos especializados e treinados em Moçambique, bem como no
+                    estrangeiro,
+                    destacados pela sua competência e flexibilidade no atendimento contínuo aos nossos clientes em todas
+                    as regiões do país, desde o primeiro contacto até aos serviços pós-venda.
+                </p>
+                <p>
+                    Para além do fornecimento do Equipamento, prestamos serviços de Instalação e Treinamento para o bom
+                    uso dos equipamentos, oferecemos garantia e executamos serviços de manutenção dentro de todo o
+                    território nacional. Possuímos diversos equipamentos de diagnóstico de avarias, reparação e
+                    calibração de equipamentos e ainda peças de reposição de excelente qualidade.
+                </p>
 
-                <section style="padding: 40px 0;">
-                    <h4 style="font-size: 24px; margin-bottom: 20px;">Assistência Técnica Especializada</h4>
-                    <p style="font-size: 16px;">
-                        Nossa equipe é formada por técnicos especializados e treinados em Moçambique, bem como no
-                        estrangeiro, destacados pela sua competência e flexibilidade no atendimento contínuo aos nossos
-                        clientes em todas as regiões do país, desde o primeiro contacto até aos serviços pós-venda.
-                    </p>
-                    <p style="font-size: 16px;">
-                        Para além do fornecimento do Equipamento, prestamos serviços de Instalação e Treinamento para o
-                        bom uso dos equipamentos, oferecemos garantia e executamos serviços de manutenção dentro de todo
-                        o território nacional. Possuímos diversos equipamentos de diagnóstico de avarias, reparação e
-                        calibração de equipamentos e ainda peças de reposição de excelente qualidade.
-                    </p>
-                </section>
+                <blockquote class="blockquote">
+                    "Não vendemos caixas com equipamentos, vendemos SOLUÇÕES. Projectamos, fornecemos, instalamos e
+                    damos formação aos utilizadores."
+                </blockquote>
+            </div>
+        </div>
 
-                <section style="padding: 40px 0;">
-                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossa Missão</h3>
-                    <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                        <li>Projectar e implementar soluções inovadoras e serviços que satisfaçam as necessidades e
-                            requisitos dos nossos clientes;</li>
-                        <li>Garantir um serviço de assistência após venda de elevada qualidade e eficiência</li>
-                        <li>Apostar em vencer pela qualidade dos serviços prestados, procurando as melhores práticas, as
-                            soluções mais inovadoras e eficientes com procedimentos mais eficazes.</li>
-                    </ul>
-
-                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossa Visão</h3>
-                    <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                        <li>Assumir cada vez mais um papel de empresa de referência em Moçambique no Fornecimento de
-                            Equipamentos Laboratoriais no mercado.</li>
-                        <li>Destacarmo‐nos nas nossas áreas de negócio como empresa inovadora, diferenciada no produto e
-                            na globalidade do serviço;</li>
-                        <li>Consolidar a nossa posição como empresa de referência em todo o processo: fornecimento de
-                            equipamento, treinamento, instalação, reparação e manutenção e</li>
-                        <li>Valorizar a responsabilidade social e garantir viabilidade económica, satisfazendo
-                            trabalhadores e acionistas.</li>
-                    </ul>
-
-                    <h3 style="font-size: 28px; margin-bottom: 20px;">Nossos Valores</h3>
-                    <p style="font-size: 16px; margin-bottom: 15px;">
-                        O que faz da Triónica Moçambique Lda., uma Empresa de referência no mercado é a credibilidade e
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4">
+                <div class="mvv-box">
+                    <div class="mvv-icon">🎯</div>
+                    <h3 class="mvv-title">Nossa Missão</h3>
+                    <p>Projectar e implementar soluções inovadoras e serviços que satisfaçam as necessidades e
+                        requisitos dos nossos clientes;</p>
+                    <p>Garantir um serviço de assistência após venda de elevada qualidade e eficiência</p>
+                    <p>Apostar em vencer pela qualidade dos serviços prestados, procurando as melhores práticas, as
+                        soluções mais inovadoras e eficientes com procedimentos mais eficazes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mvv-box">
+                    <div class="mvv-icon">👁️</div>
+                    <h3 class="mvv-title">Nossa Visão</h3>
+                    <p>Assumir cada vez mais um papel de empresa de referência em Moçambique no Fornecimento de
+                        Equipamentos Laboratoriais no mercado.</p>
+                    <p>Destacarmo‐nos nas nossas áreas de negócio como empresa inovadora, diferenciada no produto e na
+                        globalidade do serviço;</p>
+                    <p>Consolidar a nossa posição como empresa de referência em todo o processo: fornecimento de
+                        equipamento, treinamento, instalação, reparação e manutenção e</p>
+                    <p>Valorizar a responsabilidade social e garantir viabilidade económica, satisfazendo trabalhadores
+                        e acionistas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mvv-box">
+                    <div class="mvv-icon">💎</div>
+                    <h3 class="mvv-title">Nossos Valores</h3>
+                    <p>O que faz da Triónica Moçambique Lda., uma Empresa de referência no mercado é a credibilidade e
                         confiança que detém entre os seus Clientes. Para tal, rege a sua actividade pelos seguintes
-                        valores:
-                    </p>
-                    <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
-                        <li><em>Inovação</em> (nas soluções concebidas);</li>
-                        <li><em>Eficiência</em> (nas respostas a qualquer solicitação);</li>
-                        <li><em>Eficácia</em> (nos processos adoptados);</li>
-                        <li><em>Honestidade</em> (no relacionamento com Clientes, Fornecedores e Parceiros);</li>
-                        <li><em>Criação de Valor</em> (assente em soluções fiáveis e sustentáveis);</li>
-                        <li><em>Responsabilidade Social</em> (compatibilizando a ética com a actividade desenvolvida);
+                        valores:</p>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li>Inovação (nas soluções concebidas);</li>
+                        <li>Eficiência (nas respostas a qualquer solicitação);</li>
+                        <li>Eficácia (nos processos adoptados);</li>
+                        <li>Honestidade (no relacionamento com Clientes, Fornecedores e Parceiros);</li>
+                        <li>Criação de Valor (assente em soluções fiáveis e sustentáveis);</li>
+                        <li>Responsabilidade Social (compatibilizando a ética com a actividade desenvolvida);</li>
+                        <li>Reinvestimento (em meios técnicos e na formação profissional, nacional e internacional).
                         </li>
-                        <li><em>Reinvestimento</em> (em meios técnicos e na formação profissional, nacional e
-                            internacional).</li>
                     </ul>
-                </section>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <section style="padding: 40px 0;">
-                    <h1 style="font-size: 32px; margin-bottom: 40px; text-align: center;">Nossos Clientes:</h1>
-                    <div class="clients-grid">
-                        <figure><img src="wp-content/uploads/2019/04/inade-360x304.png" alt="inade" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/images.png" alt="images" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/header-logo-anep.png" alt="header-logo-anep" />
-                        </figure>
-                        <figure><img src="wp-content/uploads/2019/04/HCB-360x97.jpg" alt="HCB" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/download-360x110.jpg" alt="download" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/BCI-LAST-360x400.png" alt="BCI LAST" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/banco-last-360x400.png" alt="banco last" />
-                        </figure>
-                        <figure><img src="wp-content/uploads/2019/04/Unizambeze-360x385.jpg" alt="Unizambeze" />
-                        </figure>
-                        <figure><img src="wp-content/uploads/2019/04/Sasol_logo-360x400.png" alt="Sasol_logo" />
-                        </figure>
-                        <figure><img src="wp-content/uploads/2019/04/logov5-360x221.png" alt="logov5" /></figure>
-                        <figure><img src="wp-content/uploads/2019/04/logoiamretina.png" alt="logoiamretina" /></figure>
-                    </div>
-                </section>
-
-            </main>
+    <div class="clients-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; display: block; margin-bottom: 50px;">Nossos Clientes
+            </h2>
+            <div class="clients-grid">
+                <figure><img src="wp-content/uploads/2019/05/inade-360x304.png" alt="INADE" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/images.png" alt="Client" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/header-logo-anep.png" alt="ANEP" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/HCB-360x97.jpg" alt="HCB" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/download-360x110.jpg" alt="Client" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/download-1-e1556023650936.jpg" alt="Client" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/BCI-LAST-360x400.png" alt="BCI" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/banco-last-360x400.png" alt="Banco" /></figure>
+                <figure><img
+                        src="wp-content/uploads/2019/05/19399620_1375015429253245_2341049790206874199_n-360x400.png"
+                        alt="Client" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/185951_196856143676469_5944359_n-360x400.jpg"
+                        alt="Client" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/Unizambeze-360x385.jpg" alt="Unizambeze" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/Sasol_logo-360x400.png" alt="Sasol" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/logov5-360x221.png" alt="Logo" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/logoiamretina.png" alt="Iamretina" /></figure>
+                <figure><img src="wp-content/uploads/2019/05/1-1-264x400.png" alt="Client" /></figure>
+            </div>
         </div>
     </div>
 
